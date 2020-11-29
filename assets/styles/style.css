@@ -29,27 +29,6 @@ body {
   overflow-x: hidden;
 }
 
-button {
-  position: relative;
-  color: #ff4d4d;
-  outline: none;
-  background: none;
-  border-radius: 10px;
-  font-size: 18px;
-  font-family: "Mont-SB";
-  padding: 12px 38px;
-  border: 2px solid #ff4d4d;
-  cursor: pointer;
-  overflow: hidden;
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
-}
-
-button:hover {
-  background: #ff4d4d;
-  color: #fff;
-}
-
 .main {
   opacity: 1;
   overflow: auto;
@@ -107,6 +86,26 @@ button:hover {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+.main .heroSection header nav .navLinks button {
+  position: relative;
+  color: #ff4d4d;
+  outline: none;
+  background: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-family: "Mont-SB";
+  padding: 12px 38px;
+  border: 2px solid #ff4d4d;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.main .heroSection header nav .navLinks button:hover {
+  background: #ff4d4d;
+  color: #fff;
 }
 
 .main .heroSection .heroBg {
@@ -168,5 +167,45 @@ button:hover {
 
 .main .heroSection .heroContent .content .btns a {
   margin-right: 32px;
+}
+
+.main .heroSection .heroContent .content .btns .expBtn {
+  position: relative;
+  color: #fff;
+  outline: none;
+  background: #ff4d4d;
+  border-radius: 10px;
+  font-size: 18px;
+  font-family: "Mont-SB";
+  padding: 12px 38px;
+  border: 2px solid #ff4d4d;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.main .heroSection .heroContent .content .btns .expBtn:hover {
+  background: #ff4d4d;
+  color: #fff;
+}
+
+.main .heroSection .heroContent .content .btns .viewBtn {
+  position: relative;
+  color: #ff4d4d;
+  outline: none;
+  background: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-family: "Mont-SB";
+  padding: 12px 38px;
+  border: 2px solid #ff4d4d;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.main .heroSection .heroContent .content .btns .viewBtn:hover {
+  background: #ff4d4d;
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */

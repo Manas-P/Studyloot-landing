@@ -4,6 +4,26 @@ $primary: #ff4d4d;
 $black: #252525;
 $white: #fff;
 
+//Mixins
+@mixin btn($clr, $btnBg, $hovBg, $hovClr) {
+  position: relative;
+  color: $clr;
+  outline: none;
+  background: $btnBg;
+  border-radius: 10px;
+  font-size: 18px;
+  font-family: "Mont-SB";
+  padding: 12px 38px;
+  border: 2px solid $primary;
+  cursor: pointer;
+  transition: 0.3s ease;
+  &:hover {
+    background: $hovBg;
+    color: $hovClr;
+  }
+}
+
+//Fonts
 @font-face {
   font-family: "Mont-R";
   src: url(../fonts/Montserrat-Regular.ttf);
@@ -32,25 +52,6 @@ $white: #fff;
 
 body {
   overflow-x: hidden;
-}
-
-button {
-  position: relative;
-  color: $primary;
-  outline: none;
-  background: none;
-  border-radius: 10px;
-  font-size: 18px;
-  font-family: "Mont-SB";
-  padding: 12px 38px;
-  border: 2px solid $primary;
-  cursor: pointer;
-  overflow: hidden;
-  transition: 0.3s ease;
-  &:hover {
-    background: $primary;
-    color: $white;
-  }
 }
 
 .main {
@@ -84,6 +85,9 @@ button {
           justify-content: space-evenly;
           list-style: none;
           justify-content: flex-end;
+          button {
+            @include btn($primary, none, $primary, $white);
+          }
         }
       }
     }
@@ -132,9 +136,15 @@ button {
           line-height: 37px;
           margin: 24px 0 22px 0;
         }
-        .btns{
-          a{
+        .btns {
+          a {
             margin-right: 32px;
+          }
+          .expBtn {
+            @include btn($white, $primary, $primary, $white);
+          }
+          .viewBtn {
+            @include btn($primary, none, $primary, $white);
           }
         }
       }
