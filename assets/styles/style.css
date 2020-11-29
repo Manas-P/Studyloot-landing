@@ -143,7 +143,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 70vh;
+  height: 67vh;
   width: 100%;
   padding: 0 200px;
   -webkit-box-align: center;
@@ -153,7 +153,7 @@ body {
 
 .main .heroSection .heroContent .content .heading {
   font-family: "Mont-SB";
-  font-size: 58px;
+  font-size: 56px;
   width: 740px;
 }
 
@@ -162,7 +162,7 @@ body {
   font-size: 24px;
   width: 688px;
   line-height: 37px;
-  margin: 24px 0 22px 0;
+  margin: 28px 0 28px 0;
 }
 
 .main .heroSection .heroContent .content .btns a {
@@ -213,9 +213,7 @@ body {
   position: relative;
   width: 700px;
   height: 540px;
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
-  margin-left: 77px;
+  margin-left: 65px;
 }
 
 .main .heroSection .heroContent .images .boyLap {
@@ -230,28 +228,28 @@ body {
 .main .heroSection .heroContent .images .html {
   position: absolute;
   left: 70px;
-  width: 125px;
+  width: 120px;
   top: 250px;
 }
 
 .main .heroSection .heroContent .images .js {
   position: absolute;
   left: 225px;
-  width: 125px;
+  width: 120px;
   top: 20px;
 }
 
 .main .heroSection .heroContent .images .php {
   position: absolute;
   right: 120px;
-  width: 125px;
+  width: 120px;
   top: 95px;
 }
 
 .main .heroSection .heroContent .images .css {
   position: absolute;
   right: 0;
-  width: 125px;
+  width: 120px;
   top: 300px;
 }
 /*# sourceMappingURL=style.css.map */

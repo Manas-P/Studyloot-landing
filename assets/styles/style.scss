@@ -118,7 +118,7 @@ body {
       position: absolute;
       z-index: 1;
       display: flex;
-      height: 70vh;
+      height: 67vh;
       width: 100%;
       padding: 0 200px;
       // background: $primary;
@@ -126,7 +126,7 @@ body {
       .content {
         .heading {
           font-family: "Mont-SB";
-          font-size: 58px;
+          font-size: 56px;
           width: 740px;
         }
         .para {
@@ -134,7 +134,7 @@ body {
           font-size: 24px;
           width: 688px;
           line-height: 37px;
-          margin: 24px 0 22px 0;
+          margin: 28px 0 28px 0;
         }
         .btns {
           a {
@@ -152,9 +152,8 @@ body {
         position: relative;
         width: 700px;
         height: 540px;
-        transform: scale(0.9);
         // background-color: rgb(255, 147, 147);
-        margin-left: 77px;
+        margin-left: 65px;
         .boyLap {
           position: absolute;
           width: 435px;
@@ -165,25 +164,25 @@ body {
         .html {
           position: absolute;
           left: 70px;
-          width: 125px;
+          width: 120px;
           top: 250px;
         }
         .js {
           position: absolute;
           left: 225px;
-          width: 125px;
+          width: 120px;
           top: 20px;
         }
         .php {
           position: absolute;
           right: 120px;
-          width: 125px;
+          width: 120px;
           top: 95px;
         }
         .css {
           position: absolute;
           right: 0;
-          width: 125px;
+          width: 120px;
           top: 300px;
         }
       }
