@@ -10,6 +10,9 @@ var preloader=bodymovin.loadAnimation({
 //Preloader
 window.addEventListener("load",()=>{
     const preloader=document.querySelector(".preloader");
-    preloader.classList.add("preloaderFinish");
-    console.log("Finish");
+    // preloader.delay(5000).fadeOut();
+    setTimeout(()=>{
+        preloader.classList.add("preloaderFinish");
+    },4000);
+    // console.log("Finish");
 })
