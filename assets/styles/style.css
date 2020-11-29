@@ -18,6 +18,10 @@
   src: url(../fonts/Montserrat-Bold.ttf);
 }
 
+.main {
+  opacity: 0;
+}
+
 .preloader {
   position: fixed;
   z-index: 10;
@@ -31,5 +35,9 @@
 .preloaderFinish {
   opacity: 0;
   pointer-events: none;
+}
+
+.display {
+  opacity: 1;
 }
 /*# sourceMappingURL=style.css.map */

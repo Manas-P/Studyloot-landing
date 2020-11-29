@@ -23,6 +23,10 @@ $black: #252525;
   src: url(../fonts/Montserrat-Bold.ttf);
 }
 
+.main {
+  opacity: 0;
+}
+
 //Preloader
 .preloader {
   position: fixed;
@@ -35,4 +39,7 @@ $black: #252525;
 .preloaderFinish {
   opacity: 0;
   pointer-events: none;
+}
+.display {
+  opacity: 1;
 }
