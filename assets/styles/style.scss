@@ -24,7 +24,10 @@ $black: #252525;
 }
 
 //Preloader
+.preloader {
+  overflow: hidden;
+}
 .preloaderFinish {
-  // display: none;
+  display: none;
   pointer-events: none;
 }
