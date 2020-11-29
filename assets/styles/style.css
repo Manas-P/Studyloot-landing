@@ -18,26 +18,20 @@
   src: url(../fonts/Montserrat-Bold.ttf);
 }
 
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .main {
-  opacity: 0;
-}
-
-.preloader {
-  position: fixed;
-  z-index: 10;
   opacity: 1;
-  background: #fff;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  overflow: hidden;
+  overflow: auto;
 }
 
-.preloaderFinish {
-  opacity: 0;
-  pointer-events: none;
-}
-
-.display {
-  opacity: 1;
+.main section {
+  height: 100vh;
+  background: #ff4d4d;
 }
 /*# sourceMappingURL=style.css.map */
