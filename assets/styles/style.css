@@ -30,8 +30,102 @@
   overflow: auto;
 }
 
-.main section {
+.main .heroSection {
   height: 100vh;
+  background: #f0f6ff;
+}
+
+.main .heroSection header {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 0;
+  height: 140px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #fff;
+  padding: 0 104px 0 104px;
+}
+
+.main .heroSection header .logoContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 155px;
+  height: auto;
+}
+
+.main .heroSection header .logoContainer img {
+  width: 100%;
+}
+
+.main .heroSection header nav {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.main .heroSection header nav .navLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  list-style: none;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.main .heroSection header nav .navLinks button {
+  position: relative;
+  color: #ff4d4d;
+  outline: none;
+  background: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-family: "Mont-SB";
+  padding: 12px 38px;
+  border: 2px solid #ff4d4d;
+  cursor: pointer;
+  overflow: hidden;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.main .heroSection header nav .navLinks button:hover {
   background: #ff4d4d;
+  color: #fff;
+}
+
+.main .heroSection header nav .navLinks button::before {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  padding: 50%;
+  border-radius: 50%;
+  left: calc(100% * var(--ripple-x));
+  top: calc(100% * var(--ripple-y));
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+  opacity: 0;
+  -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: transform 0.5s, opacity 0.5s;
+  transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
+}
+
+.main .heroSection header nav .navLinks button:active::before {
+  -webkit-transition: 0s;
+  transition: 0s;
+  opacity: 0.9;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
 }
 /*# sourceMappingURL=style.css.map */

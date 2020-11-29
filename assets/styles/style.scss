@@ -2,6 +2,7 @@
 $bg: #f0f6ff;
 $primary: #ff4d4d;
 $black: #252525;
+$white: #fff;
 
 @font-face {
   font-family: "Mont-R";
@@ -32,9 +33,71 @@ $black: #252525;
 .main {
   opacity: 1;
   overflow: auto;
-  section {
+  .heroSection {
     height: 100vh;
-    background: $primary;
+    background: $bg;
+    header {
+      position: relative;
+      display: flex;
+      top: 0;
+      height: 140px;
+      align-items: center;
+      background: $white;
+      padding: 0 104px 0 104px;
+      .logoContainer {
+        display: flex;
+        justify-content: flex-start;
+        width: 155px;
+        height: auto;
+        img {
+          width: 100%;
+        }
+      }
+      nav {
+        flex: 1;
+        .navLinks {
+          display: flex;
+          justify-content: space-evenly;
+          list-style: none;
+          justify-content: flex-end;
+          button {
+            position: relative;
+            color: $primary;
+            outline: none;
+            background: none;
+            border-radius: 10px;
+            font-size: 18px;
+            font-family: "Mont-SB";
+            padding: 12px 38px;
+            border: 2px solid $primary;
+            cursor: pointer;
+            overflow: hidden;
+            transition: 0.3s ease;
+            &:hover {
+              background: $primary;
+              color: $white;
+            }
+            &::before {
+              content: "";
+              position: absolute;
+              background-color: $white;
+              padding: 50%;
+              border-radius: 50%;
+              left: calc(100% * var(--ripple-x));
+              top: calc(100% * var(--ripple-y));
+              transform: translate(-50%, -50%) scale(1);
+              opacity: 0;
+              transition: transform 0.5s, opacity 0.5s;
+            }
+            &:active::before {
+              transition: 0s;
+              opacity: 0.9;
+              transform: translate(-50%, -50%) scale(0);
+            }
+          }
+        }
+      }
+    }
   }
 }
 
