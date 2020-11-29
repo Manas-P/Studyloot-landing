@@ -148,6 +148,45 @@ body {
           }
         }
       }
+      .images {
+        position: relative;
+        width: 700px;
+        height: 540px;
+        transform: scale(0.9);
+        // background-color: rgb(255, 147, 147);
+        margin-left: 77px;
+        .boyLap {
+          position: absolute;
+          width: 435px;
+          top: 70%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+        .html {
+          position: absolute;
+          left: 70px;
+          width: 125px;
+          top: 250px;
+        }
+        .js {
+          position: absolute;
+          left: 225px;
+          width: 125px;
+          top: 20px;
+        }
+        .php {
+          position: absolute;
+          right: 120px;
+          width: 125px;
+          top: 95px;
+        }
+        .css {
+          position: absolute;
+          right: 0;
+          width: 125px;
+          top: 300px;
+        }
+      }
     }
   }
 }

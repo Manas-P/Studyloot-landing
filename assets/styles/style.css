@@ -208,4 +208,50 @@ body {
   background: #ff4d4d;
   color: #fff;
 }
+
+.main .heroSection .heroContent .images {
+  position: relative;
+  width: 700px;
+  height: 540px;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  margin-left: 77px;
+}
+
+.main .heroSection .heroContent .images .boyLap {
+  position: absolute;
+  width: 435px;
+  top: 70%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.main .heroSection .heroContent .images .html {
+  position: absolute;
+  left: 70px;
+  width: 125px;
+  top: 250px;
+}
+
+.main .heroSection .heroContent .images .js {
+  position: absolute;
+  left: 225px;
+  width: 125px;
+  top: 20px;
+}
+
+.main .heroSection .heroContent .images .php {
+  position: absolute;
+  right: 120px;
+  width: 125px;
+  top: 95px;
+}
+
+.main .heroSection .heroContent .images .css {
+  position: absolute;
+  right: 0;
+  width: 125px;
+  top: 300px;
+}
 /*# sourceMappingURL=style.css.map */
