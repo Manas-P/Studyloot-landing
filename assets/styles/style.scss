@@ -22,3 +22,9 @@ $black: #252525;
   font-family: "Mont-B";
   src: url(../fonts/Montserrat-Bold.ttf);
 }
+
+//Preloader
+.preloaderFinish {
+  display: none;
+  pointer-events: none;
+}

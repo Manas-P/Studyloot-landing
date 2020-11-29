@@ -17,4 +17,9 @@
   font-family: "Mont-B";
   src: url(../fonts/Montserrat-Bold.ttf);
 }
+
+.preloaderFinish {
+  display: none;
+  pointer-events: none;
+}
 /*# sourceMappingURL=style.css.map */
