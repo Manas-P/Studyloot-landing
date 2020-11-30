@@ -372,7 +372,7 @@ body {
 }
 
 .main .focusSection .contents {
-  padding: 240px 10.416666666666666vw;
+  padding: 12.5vw 10.416666666666666vw;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -383,7 +383,7 @@ body {
 }
 
 .main .focusSection .contents img {
-  width: 620px;
+  width: 32.291666666666664vw;
   height: auto;
 }
 
@@ -397,7 +397,7 @@ body {
   font-family: "Mont-M";
   font-size: 1.25vw;
   line-height: 1.9270833333333333vw;
-  width: 740px;
+  width: 38.54167vw;
   margin-top: 1.4583333333333333vw;
 }
 /*# sourceMappingURL=style.css.map */

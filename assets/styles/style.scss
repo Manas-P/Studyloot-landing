@@ -255,12 +255,12 @@ body {
   .focusSection {
     // position: absolute;
     .contents {
-      padding: 240px 10.416666666666666vw;
+      padding: 12.5vw 10.416666666666666vw;
       display: grid;
       grid-template-columns: 1fr 1fr;
       align-items: center;
       img {
-        width: 620px;
+        width: 32.291666666666664vw;
         height: auto;
       }
       .content {
@@ -268,7 +268,7 @@ body {
           @include heading(none);
         }
         .para {
-          @include paragraph(740px);
+          @include paragraph(38.541666666666664vw);
           margin-top: 1.4583333333333333vw;
         }
       }
