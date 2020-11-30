@@ -24,20 +24,28 @@ $white: #fff;
     color: $hovClr;
   }
 }
+//Hero Bubbles
+@mixin bubble($top, $left, $right) {
+  position: absolute;
+  width: 120px;
+  top: $top;
+  left: $left;
+  right: $right;
+}
 
+//Hero Section Animation
 @mixin animationpath($pos) {
   0% {
     top: $pos;
   }
   50% {
-    top: calc(#{$pos} + 30px);
+    top: calc(#{$pos} + 20px);
   }
   100% {
     top: $pos;
   }
 }
 
-//Hero Section Animation
 @mixin htmlanim($pos) {
   animation: htmlanimation ease-in-out 5s infinite;
   @keyframes htmlanimation {
@@ -205,31 +213,19 @@ body {
           transform: translate(-50%, -50%);
         }
         .html {
-          position: absolute;
-          left: 70px;
-          width: 120px;
-          top: 250px;
+          @include bubble(250px, 70px, none);
           @include htmlanim(250px);
         }
         .js {
-          position: absolute;
-          left: 225px;
-          width: 120px;
-          top: 20px;
+          @include bubble(20px, 225px, none);
           @include jsanim(20px);
         }
         .php {
-          position: absolute;
-          right: 120px;
-          width: 120px;
-          top: 95px;
+          @include bubble(95px, none, 120px);
           @include phpanim(95px);
         }
         .css {
-          position: absolute;
-          right: 0;
-          width: 120px;
-          top: 300px;
+          @include bubble(300px, none, 0px);
           @include cssanim(300px);
         }
       }

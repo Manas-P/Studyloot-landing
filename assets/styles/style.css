@@ -227,9 +227,10 @@ body {
 
 .main .heroSection .heroContent .images .html {
   position: absolute;
-  left: 70px;
   width: 120px;
   top: 250px;
+  left: 70px;
+  right: none;
   -webkit-animation: htmlanimation ease-in-out 5s infinite;
           animation: htmlanimation ease-in-out 5s infinite;
 }
@@ -239,7 +240,7 @@ body {
     top: 250px;
   }
   50% {
-    top: calc(250px + 30px);
+    top: calc(250px + 20px);
   }
   100% {
     top: 250px;
@@ -251,7 +252,7 @@ body {
     top: 250px;
   }
   50% {
-    top: calc(250px + 30px);
+    top: calc(250px + 20px);
   }
   100% {
     top: 250px;
@@ -260,9 +261,10 @@ body {
 
 .main .heroSection .heroContent .images .js {
   position: absolute;
-  left: 225px;
   width: 120px;
   top: 20px;
+  left: 225px;
+  right: none;
   -webkit-animation: jsanimation ease-in-out 3s infinite;
           animation: jsanimation ease-in-out 3s infinite;
 }
@@ -272,7 +274,7 @@ body {
     top: 20px;
   }
   50% {
-    top: calc(20px + 30px);
+    top: calc(20px + 20px);
   }
   100% {
     top: 20px;
@@ -284,7 +286,7 @@ body {
     top: 20px;
   }
   50% {
-    top: calc(20px + 30px);
+    top: calc(20px + 20px);
   }
   100% {
     top: 20px;
@@ -293,9 +295,10 @@ body {
 
 .main .heroSection .heroContent .images .php {
   position: absolute;
-  right: 120px;
   width: 120px;
   top: 95px;
+  left: none;
+  right: 120px;
   -webkit-animation: phpanimation ease-in-out 6s infinite;
           animation: phpanimation ease-in-out 6s infinite;
 }
@@ -305,7 +308,7 @@ body {
     top: 95px;
   }
   50% {
-    top: calc(95px + 30px);
+    top: calc(95px + 20px);
   }
   100% {
     top: 95px;
@@ -317,7 +320,7 @@ body {
     top: 95px;
   }
   50% {
-    top: calc(95px + 30px);
+    top: calc(95px + 20px);
   }
   100% {
     top: 95px;
@@ -326,9 +329,10 @@ body {
 
 .main .heroSection .heroContent .images .css {
   position: absolute;
-  right: 0;
   width: 120px;
   top: 300px;
+  left: none;
+  right: 0px;
   -webkit-animation: cssanimation ease-in-out 4s infinite;
           animation: cssanimation ease-in-out 4s infinite;
 }
@@ -338,7 +342,7 @@ body {
     top: 300px;
   }
   50% {
-    top: calc(300px + 30px);
+    top: calc(300px + 20px);
   }
   100% {
     top: 300px;
@@ -350,7 +354,7 @@ body {
     top: 300px;
   }
   50% {
-    top: calc(300px + 30px);
+    top: calc(300px + 20px);
   }
   100% {
     top: 300px;
