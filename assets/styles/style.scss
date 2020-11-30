@@ -24,6 +24,22 @@ $white: #fff;
     color: $hovClr;
   }
 }
+
+//Heading
+@mixin heading($width) {
+  font-family: "Mont-SB";
+  font-size: 2.9166666666666665vw;
+  width: $width;
+}
+
+//Paragraph
+@mixin paragraph($width) {
+  font-family: "Mont-M";
+  font-size: 1.25vw;
+  line-height: 1.9270833333333333vw;
+  width: $width;
+}
+
 //Hero Bubbles
 @mixin bubble($top, $left, $right) {
   position: absolute;
@@ -103,7 +119,8 @@ $white: #fff;
 
 html,
 body {
-  overflow-x: hidden !important;
+  overflow-x: hidden;
+  background: $bg;
 }
 
 .main {
@@ -111,7 +128,6 @@ body {
   overflow: auto;
   .heroSection {
     height: 100vh;
-    background: $bg;
     header {
       z-index: 1;
       position: relative;
@@ -152,7 +168,7 @@ body {
       transform: translateX(-50%);
       background: $white;
       // border-radius: 0% 0% 50% 50% / 0% 0% 30% 30%;
-      border-radius: 100vw / 45vh;
+      border-radius: 100vw / 30vh;
       box-shadow: 0px 7px 102px rgba(0, 26, 255, 0.05);
       &:before {
         content: "";
@@ -186,15 +202,10 @@ body {
       align-items: center;
       .content {
         .heading {
-          font-family: "Mont-SB";
-          font-size: 2.9166666666666665vw;
-          width: 38.541666666666664vw;
+          @include heading(38.541666666666664vw);
         }
         .para {
-          font-family: "Mont-M";
-          font-size: 1.25vw;
-          width: 35.833333333333336vw;
-          line-height: 1.9270833333333333vw;
+          @include paragraph(35.833333333333336vw);
           margin: 1.4583333333333333vw 0 1.4583333333333333vw 0;
         }
         .btns {
@@ -237,6 +248,28 @@ body {
         .css {
           @include bubble(15.625vw, none, 0px);
           @include cssanim(15.625vw);
+        }
+      }
+    }
+  }
+  .focusSection {
+    // position: absolute;
+    .contents {
+      padding: 240px 10.416666666666666vw;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      img {
+        width: 620px;
+        height: auto;
+      }
+      .content {
+        .heading {
+          @include heading(none);
+        }
+        .para {
+          @include paragraph(740px);
+          margin-top: 1.4583333333333333vw;
         }
       }
     }
