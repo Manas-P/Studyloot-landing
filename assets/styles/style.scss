@@ -280,26 +280,26 @@ body {
     }
   }
   .quoteSection {
-    padding: 150px 0;
+    padding: 7.8125vw 0;
     .content {
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
       .quoteLeft {
         position: absolute;
-        width: 85px;
-        top: -75px;
-        left: -150px;
+        width: 4.427083333333333vw;
+        top: -3.90625vw;
+        left: -7.8125vw;
       }
       .text {
         font-family: "Mont-MI";
-        font-size: 72px;
+        font-size: 3.75vw;
       }
       .quoteRight {
         position: absolute;
-        width: 85px;
-        right: -150px;
-        bottom: -75px;
+        width: 4.427083333333333vw;
+        right: -7.8125vw;
+        bottom: -3.90625vw;
       }
     }
   }
