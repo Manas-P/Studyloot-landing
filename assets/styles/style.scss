@@ -111,6 +111,11 @@ $white: #fff;
   src: url(../fonts/Montserrat-Bold.ttf);
 }
 
+@font-face {
+  font-family: "Mont-MI";
+  src: url(../fonts/Montserrat-MediumItalic.ttf);
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -271,6 +276,30 @@ body {
           @include paragraph(38.541666666666664vw);
           margin-top: 1.4583333333333333vw;
         }
+      }
+    }
+  }
+  .quoteSection {
+    padding: 150px 0;
+    .content {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      .quoteLeft {
+        position: absolute;
+        width: 85px;
+        top: -75px;
+        left: -150px;
+      }
+      .text {
+        font-family: "Mont-MI";
+        font-size: 72px;
+      }
+      .quoteRight {
+        position: absolute;
+        width: 85px;
+        right: -150px;
+        bottom: -75px;
       }
     }
   }

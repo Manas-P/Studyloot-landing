@@ -18,6 +18,11 @@
   src: url(../fonts/Montserrat-Bold.ttf);
 }
 
+@font-face {
+  font-family: "Mont-MI";
+  src: url(../fonts/Montserrat-MediumItalic.ttf);
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -399,5 +404,35 @@ body {
   line-height: 1.9270833333333333vw;
   width: 38.54167vw;
   margin-top: 1.4583333333333333vw;
+}
+
+.main .quoteSection {
+  padding: 150px 0;
+}
+
+.main .quoteSection .content {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.main .quoteSection .content .quoteLeft {
+  position: absolute;
+  width: 85px;
+  top: -75px;
+  left: -150px;
+}
+
+.main .quoteSection .content .text {
+  font-family: "Mont-MI";
+  font-size: 72px;
+}
+
+.main .quoteSection .content .quoteRight {
+  position: absolute;
+  width: 85px;
+  right: -150px;
+  bottom: -75px;
 }
 /*# sourceMappingURL=style.css.map */
