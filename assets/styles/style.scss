@@ -25,64 +25,44 @@ $white: #fff;
   }
 }
 
+@mixin animationpath($pos) {
+  0% {
+    top: $pos;
+  }
+  50% {
+    top: calc(#{$pos} + 30px);
+  }
+  100% {
+    top: $pos;
+  }
+}
+
 //Hero Section Animation
 @mixin htmlanim($pos) {
   animation: htmlanimation ease-in-out 5s infinite;
   @keyframes htmlanimation {
-    0% {
-      top: $pos;
-    }
-    50% {
-      top: calc(#{$pos} + 30px);
-    }
-    100% {
-      top: $pos;
-    }
+    @include animationpath($pos);
   }
 }
 
 @mixin jsanim($pos) {
   animation: jsanimation ease-in-out 3s infinite;
   @keyframes jsanimation {
-    0% {
-      top: $pos;
-    }
-    50% {
-      top: calc(#{$pos} + 30px);
-    }
-    100% {
-      top: $pos;
-    }
+    @include animationpath($pos);
   }
 }
 
 @mixin phpanim($pos) {
   animation: phpanimation ease-in-out 6s infinite;
   @keyframes phpanimation {
-    0% {
-      top: $pos;
-    }
-    50% {
-      top: calc(#{$pos} + 30px);
-    }
-    100% {
-      top: $pos;
-    }
+    @include animationpath($pos);
   }
 }
 
 @mixin cssanim($pos) {
   animation: cssanimation ease-in-out 4s infinite;
   @keyframes cssanimation {
-    0% {
-      top: $pos;
-    }
-    50% {
-      top: calc(#{$pos} + 30px);
-    }
-    100% {
-      top: $pos;
-    }
+    @include animationpath($pos);
   }
 }
 
