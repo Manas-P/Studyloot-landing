@@ -230,6 +230,32 @@ body {
   left: 70px;
   width: 120px;
   top: 250px;
+  -webkit-animation: htmlanimation ease-in-out 5s infinite;
+          animation: htmlanimation ease-in-out 5s infinite;
+}
+
+@-webkit-keyframes htmlanimation {
+  0% {
+    top: 250px;
+  }
+  50% {
+    top: calc(250px + 30px);
+  }
+  100% {
+    top: 250px;
+  }
+}
+
+@keyframes htmlanimation {
+  0% {
+    top: 250px;
+  }
+  50% {
+    top: calc(250px + 30px);
+  }
+  100% {
+    top: 250px;
+  }
 }
 
 .main .heroSection .heroContent .images .js {
@@ -237,6 +263,32 @@ body {
   left: 225px;
   width: 120px;
   top: 20px;
+  -webkit-animation: jsanimation ease-in-out 3s infinite;
+          animation: jsanimation ease-in-out 3s infinite;
+}
+
+@-webkit-keyframes jsanimation {
+  0% {
+    top: 20px;
+  }
+  50% {
+    top: calc(20px + 30px);
+  }
+  100% {
+    top: 20px;
+  }
+}
+
+@keyframes jsanimation {
+  0% {
+    top: 20px;
+  }
+  50% {
+    top: calc(20px + 30px);
+  }
+  100% {
+    top: 20px;
+  }
 }
 
 .main .heroSection .heroContent .images .php {
@@ -244,6 +296,32 @@ body {
   right: 120px;
   width: 120px;
   top: 95px;
+  -webkit-animation: phpanimation ease-in-out 6s infinite;
+          animation: phpanimation ease-in-out 6s infinite;
+}
+
+@-webkit-keyframes phpanimation {
+  0% {
+    top: 95px;
+  }
+  50% {
+    top: calc(95px + 30px);
+  }
+  100% {
+    top: 95px;
+  }
+}
+
+@keyframes phpanimation {
+  0% {
+    top: 95px;
+  }
+  50% {
+    top: calc(95px + 30px);
+  }
+  100% {
+    top: 95px;
+  }
 }
 
 .main .heroSection .heroContent .images .css {
@@ -251,5 +329,31 @@ body {
   right: 0;
   width: 120px;
   top: 300px;
+  -webkit-animation: cssanimation ease-in-out 4s infinite;
+          animation: cssanimation ease-in-out 4s infinite;
+}
+
+@-webkit-keyframes cssanimation {
+  0% {
+    top: 300px;
+  }
+  50% {
+    top: calc(300px + 30px);
+  }
+  100% {
+    top: 300px;
+  }
+}
+
+@keyframes cssanimation {
+  0% {
+    top: 300px;
+  }
+  50% {
+    top: calc(300px + 30px);
+  }
+  100% {
+    top: 300px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
