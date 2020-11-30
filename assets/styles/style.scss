@@ -101,6 +101,7 @@ $white: #fff;
   box-sizing: border-box;
 }
 
+html,
 body {
   overflow-x: hidden !important;
 }
@@ -144,14 +145,23 @@ body {
     }
     .heroBg {
       position: absolute;
-      height: 92vh;
-      width: 140%;
+      height: 94vh;
+      width: 100%;
       top: 0;
       left: 50%;
       transform: translateX(-50%);
       background: $white;
-      border-radius: 0% 0% 50% 50% / 0% 0% 75% 75%;
+      // border-radius: 0% 0% 50% 50% / 0% 0% 30% 30%;
+      border-radius: 100vw / 45vh;
       box-shadow: 0px 7px 102px rgba(0, 26, 255, 0.05);
+      &:before {
+        content: "";
+        position: absolute;
+        height: 50vh;
+        width: 100%;
+        top: 0;
+        background: $white;
+      }
       .down {
         position: absolute;
         top: 100%;

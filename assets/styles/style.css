@@ -25,6 +25,7 @@
           box-sizing: border-box;
 }
 
+html,
 body {
   overflow-x: hidden !important;
 }
@@ -110,16 +111,25 @@ body {
 
 .main .heroSection .heroBg {
   position: absolute;
-  height: 92vh;
-  width: 140%;
+  height: 94vh;
+  width: 100%;
   top: 0;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   background: #fff;
-  border-radius: 0% 0% 50% 50% / 0% 0% 75% 75%;
+  border-radius: 100vw / 45vh;
   -webkit-box-shadow: 0px 7px 102px rgba(0, 26, 255, 0.05);
           box-shadow: 0px 7px 102px rgba(0, 26, 255, 0.05);
+}
+
+.main .heroSection .heroBg:before {
+  content: "";
+  position: absolute;
+  height: 50vh;
+  width: 100%;
+  top: 0;
+  background: #fff;
 }
 
 .main .heroSection .heroBg .down {

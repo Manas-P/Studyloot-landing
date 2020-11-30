@@ -1,8 +1,11 @@
 //Locomotive Scroll
- const locoScroll = new LocomotiveScroll({
+const locoScroll = new LocomotiveScroll({
   el: document.querySelector(".main"),
-  smooth: true
-}); 
+  smooth: true,
+  direction: "vertical",
+});
+
+
 
 // // Lottie Animation for Preloader
 // var preloader=bodymovin.loadAnimation({
@@ -24,4 +27,3 @@
 //     },4000);
 //     // console.log("Finish");
 // })
-
