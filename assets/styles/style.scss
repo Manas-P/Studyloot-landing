@@ -314,7 +314,7 @@ body {
   .introSection {
     // position: absolute;
     .contents {
-      padding: 12.5vw 10.416666666666666vw;
+      padding: 12.5vw 10.416666666666666vw 7vw 10.416666666666666vw;
       display: grid;
       grid-template-columns: 1fr 1fr;
       align-items: center;
@@ -334,7 +334,7 @@ body {
     }
   }
   .features {
-    padding: 0 10.416666666666666vw 10.416666666666666vw 10.416666666666666vw;
+    padding: 0 10.416666666666666vw 5vw 10.416666666666666vw;
     .cards {
       display: flex;
       justify-content: space-between;
@@ -368,6 +368,28 @@ body {
           @include paragraph(none);
           padding-bottom: 1.9791666666666667vw;
           transition: 0.3s;
+        }
+      }
+    }
+  }
+  .winnerSection {
+    // position: absolute;
+    .contents {
+      padding: 12.5vw 10.416666666666666vw;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      img {
+        width: 25.520833333333332vw;
+        height: auto;
+      }
+      .content {
+        .heading {
+          @include heading(none);
+        }
+        .para {
+          @include paragraph(35.833333333333336vw);
+          margin-top: 1.4583333333333333vw;
         }
       }
     }
