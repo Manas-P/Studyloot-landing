@@ -26,6 +26,15 @@
 //     // console.log("Finish");
 // })
 
+
+//smooth-scrollbar
+var Scrollbar = window.Scrollbar;
+var options={
+  'damping':0.07,
+  }
+
+Scrollbar.init(document.querySelector('#main'),options);
+
 //Typewriter
 var typed = new Typed(".typing", {
   strings: ["Solution", "Code"],
