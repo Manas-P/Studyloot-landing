@@ -1,3 +1,33 @@
+@-webkit-keyframes heart {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes heart {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
 @font-face {
   font-family: "Mont-R";
   src: url(../fonts/Montserrat-Regular.ttf);
@@ -668,5 +698,39 @@ body {
   font-size: 0.85vw;
   font-family: "Mont-MI";
   color: #60695c;
+}
+
+.main footer {
+  height: 5vh;
+  width: 100%;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main footer h3 {
+  font-size: 1vw;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-family: "Mont-SB";
+  word-spacing: 0.3645833333333333vw;
+}
+
+.main footer h3 img {
+  width: 0.8333333333333334vw;
+  height: auto;
+  -webkit-animation: heart ease-in-out 2s infinite;
+          animation: heart ease-in-out 2s infinite;
 }
 /*# sourceMappingURL=style.css.map */

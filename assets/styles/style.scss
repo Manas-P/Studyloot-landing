@@ -90,6 +90,19 @@ $white: #fff;
   }
 }
 
+//Footer Heart Animatio
+@keyframes heart {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.4);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 //Fonts
 @font-face {
   font-family: "Mont-R";
@@ -469,6 +482,27 @@ body {
             }
           }
         }
+      }
+    }
+  }
+  footer {
+    height: 5vh;
+    width: 100%;
+    background: $white;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    h3 {
+      font-size: 1vw;
+      pointer-events: none;
+      user-select: none;
+      font-family: "Mont-SB";
+      word-spacing: 0.3645833333333333vw;
+      img {
+        width: 0.8333333333333334vw;
+        height: auto;
+        animation: heart ease-in-out 2s infinite;
       }
     }
   }
