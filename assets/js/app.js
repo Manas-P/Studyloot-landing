@@ -5,8 +5,6 @@
 //   multiplier:.7,
 // });
 
-
-
 // // Lottie Animation for Preloader
 // var preloader=bodymovin.loadAnimation({
 //     container:document.querySelector(".preloader"),
@@ -30,13 +28,17 @@
 
 //Typewriter
 var typed = new Typed(".typing", {
-  strings: [
-    "Solution",
-    "Code",
-  ],
+  strings: ["Solution", "Code"],
   typeSpeed: 70,
   backSpeed: 80,
   backDelay: 1500,
   showCursor: false,
   loop: true,
+});
+
+//Tilt Js
+$(document).ready(function () {
+  $(".card").tilt({
+    maxTilt: 11,
+  });
 });

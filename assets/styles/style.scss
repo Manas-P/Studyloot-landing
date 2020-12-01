@@ -342,20 +342,31 @@ body {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+        transform-style: preserve-3d;
         width: 16.354166666666668vw;
         height: 16.354166666666668vw;
         background: $white;
         border-radius: 1.3020833333333333vw;
         box-shadow: -0.15625vw 0.4166666666666667vw 2.2916666666666665vw
-          rgba(136, 136, 136, 0.06);
+          rgba(145, 145, 145, 0.06);
+        &:hover {
+          box-shadow: -0.15625vw 0.4166666666666667vw 2.34375vw
+            rgba(136, 136, 136, 0.19);
+        }
+        &:hover img,
+        &:hover .text {
+          transform: translateZ(10px);
+        }
         img {
           padding-top: 2.1875vw;
           width: 9.0625vw;
           height: auto;
+          transition: 0.3s;
         }
         .text {
           @include paragraph(none);
           padding-bottom: 1.9791666666666667vw;
+          transition: 0.3s;
         }
       }
     }

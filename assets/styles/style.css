@@ -501,18 +501,33 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
   width: 16.354166666666668vw;
   height: 16.354166666666668vw;
   background: #fff;
   border-radius: 1.3020833333333333vw;
-  -webkit-box-shadow: -0.15625vw 0.41667vw 2.29167vw rgba(136, 136, 136, 0.06);
-          box-shadow: -0.15625vw 0.41667vw 2.29167vw rgba(136, 136, 136, 0.06);
+  -webkit-box-shadow: -0.15625vw 0.41667vw 2.29167vw rgba(145, 145, 145, 0.06);
+          box-shadow: -0.15625vw 0.41667vw 2.29167vw rgba(145, 145, 145, 0.06);
+}
+
+.main .features .cards .card:hover {
+  -webkit-box-shadow: -0.15625vw 0.41667vw 2.34375vw rgba(136, 136, 136, 0.19);
+          box-shadow: -0.15625vw 0.41667vw 2.34375vw rgba(136, 136, 136, 0.19);
+}
+
+.main .features .cards .card:hover img,
+.main .features .cards .card:hover .text {
+  -webkit-transform: translateZ(10px);
+          transform: translateZ(10px);
 }
 
 .main .features .cards .card img {
   padding-top: 2.1875vw;
   width: 9.0625vw;
   height: auto;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .main .features .cards .card .text {
@@ -521,5 +536,7 @@ body {
   line-height: 1.9270833333333333vw;
   width: none;
   padding-bottom: 1.9791666666666667vw;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 /*# sourceMappingURL=style.css.map */
