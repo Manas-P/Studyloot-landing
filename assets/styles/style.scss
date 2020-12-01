@@ -394,6 +394,84 @@ body {
       }
     }
   }
+  .testimonials {
+    min-height: 100vh;
+    padding-top: 6vw;
+    .container {
+      max-width: 100vw;
+      margin: auto;
+      .quotes {
+        .lq {
+          position: absolute;
+          margin-left: 20.833333333333332vw;
+          margin-top: 15.625vw;
+          width: 4.427083333333333vw;
+          height: auto;
+        }
+        .rq {
+          position: absolute;
+          margin-left: 72.91666666666667vw;
+          margin-top: 28.645833333333332vw;
+          width: 4.427083333333333vw;
+          height: auto;
+        }
+      }
+      .title {
+        @include heading(none);
+        margin-bottom: 3.90625vw;
+        text-align: center;
+      }
+      .slider-indicator {
+        padding: 2.6041666666666665vw 0 3.90625vw 0;
+        text-align-last: center;
+        img {
+          width: 4.947916666666667vw;
+          height: auto;
+          margin: 0 1.5625vw;
+          opacity: 0.5;
+          outline: none;
+          border-radius: 100%;
+          cursor: pointer;
+          transition: 0.3s ease;
+          &.active {
+            opacity: 1;
+            transform: scale(1.3);
+          }
+        }
+      }
+      .slider {
+        max-width: 41vw;
+        margin: auto;
+        text-align: center;
+        padding: 1.5625vw;
+        .slide {
+          display: none;
+          &.active {
+            display: block;
+            animation: slide 1s ease;
+          }
+          p {
+            @include paragraph(none);
+            color: #60695c;
+          }
+          .client-info {
+            margin: 1.5625vw 0;
+            .name {
+              font-size: 0.9375vw;
+              font-family: "Mont-B";
+              margin: 0.2604166666666667vw 0;
+            }
+            span {
+              display: block;
+              font-size: 0.85vw;
+              font-family: "Mont-MI";
+              color: #60695c;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 //Preloader

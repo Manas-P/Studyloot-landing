@@ -570,4 +570,103 @@ body {
   width: 35.83333vw;
   margin-top: 1.4583333333333333vw;
 }
+
+.main .testimonials {
+  min-height: 100vh;
+  padding-top: 6vw;
+}
+
+.main .testimonials .container {
+  max-width: 100vw;
+  margin: auto;
+}
+
+.main .testimonials .container .quotes .lq {
+  position: absolute;
+  margin-left: 20.833333333333332vw;
+  margin-top: 15.625vw;
+  width: 4.427083333333333vw;
+  height: auto;
+}
+
+.main .testimonials .container .quotes .rq {
+  position: absolute;
+  margin-left: 72.91666666666667vw;
+  margin-top: 28.645833333333332vw;
+  width: 4.427083333333333vw;
+  height: auto;
+}
+
+.main .testimonials .container .title {
+  font-family: "Mont-SB";
+  font-size: 2.9166666666666665vw;
+  width: none;
+  margin-bottom: 3.90625vw;
+  text-align: center;
+}
+
+.main .testimonials .container .slider-indicator {
+  padding: 2.6041666666666665vw 0 3.90625vw 0;
+  text-align-last: center;
+}
+
+.main .testimonials .container .slider-indicator img {
+  width: 4.947916666666667vw;
+  height: auto;
+  margin: 0 1.5625vw;
+  opacity: 0.5;
+  outline: none;
+  border-radius: 100%;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.main .testimonials .container .slider-indicator img.active {
+  opacity: 1;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.main .testimonials .container .slider {
+  max-width: 41vw;
+  margin: auto;
+  text-align: center;
+  padding: 1.5625vw;
+}
+
+.main .testimonials .container .slider .slide {
+  display: none;
+}
+
+.main .testimonials .container .slider .slide.active {
+  display: block;
+  -webkit-animation: slide 1s ease;
+          animation: slide 1s ease;
+}
+
+.main .testimonials .container .slider .slide p {
+  font-family: "Mont-M";
+  font-size: 1.25vw;
+  line-height: 1.9270833333333333vw;
+  width: none;
+  color: #60695c;
+}
+
+.main .testimonials .container .slider .slide .client-info {
+  margin: 1.5625vw 0;
+}
+
+.main .testimonials .container .slider .slide .client-info .name {
+  font-size: 0.9375vw;
+  font-family: "Mont-B";
+  margin: 0.2604166666666667vw 0;
+}
+
+.main .testimonials .container .slider .slide .client-info span {
+  display: block;
+  font-size: 0.85vw;
+  font-family: "Mont-MI";
+  color: #60695c;
+}
 /*# sourceMappingURL=style.css.map */
