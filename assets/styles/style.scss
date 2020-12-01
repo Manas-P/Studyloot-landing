@@ -280,7 +280,7 @@ body {
     }
   }
   .quoteSection {
-    padding: 9.114583333333334vw 0 20.833333333333332vw 0;
+    padding: 9.114583333333334vw 0 15vw 0;
     .quote {
       position: absolute;
       left: 50%;
@@ -307,6 +307,28 @@ body {
         font-family: "Mont-MI";
         font-size: 3.75vw;
         text-align: center;
+      }
+    }
+  }
+  .introSection {
+    // position: absolute;
+    .contents {
+      padding: 12.5vw 10.416666666666666vw;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      .content {
+        .heading {
+          @include heading(none);
+        }
+        .para {
+          @include paragraph(35.833333333333336vw);
+          margin-top: 1.4583333333333333vw;
+        }
+      }
+      img {
+        width: 38.802083333333336vw;
+        height: auto;
       }
     }
   }
