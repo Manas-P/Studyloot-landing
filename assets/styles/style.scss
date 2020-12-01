@@ -332,6 +332,33 @@ body {
       }
     }
   }
+  .features {
+    padding:0 200px 200px 200px ;
+    .cards {
+      display:flex;
+      justify-content: space-between;
+      .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 314px;
+        height: 314px;
+        background: $white;
+        border-radius: 25px;
+        box-shadow: -3px 8px 44px rgba(136, 136, 136, 0.06);
+        img{
+          padding-top:42px;
+          width:174px;
+          height:auto;
+        }
+        .text{
+          @include paragraph(none);
+          padding-bottom: 38px;
+        }
+      }
+    }
+  }
 }
 
 //Preloader
