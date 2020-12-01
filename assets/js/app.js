@@ -29,6 +29,7 @@
 
 //smooth-scrollbar
 var Scrollbar = window.Scrollbar;
+Scrollbar.use(OverscrollPlugin);
 var options={
   'damping':0.07,
   }
