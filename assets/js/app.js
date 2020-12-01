@@ -1,10 +1,3 @@
-// Locomotive Scroll
-// const locoScroll = new LocomotiveScroll({
-//   el: document.querySelector(".main"),
-//   smooth: true,
-//   multiplier:.7,
-// });
-
 // // Lottie Animation for Preloader
 // var preloader=bodymovin.loadAnimation({
 //     container:document.querySelector(".preloader"),
@@ -26,15 +19,14 @@
 //     // console.log("Finish");
 // })
 
-
 //smooth-scrollbar
 var Scrollbar = window.Scrollbar;
 Scrollbar.use(OverscrollPlugin);
-var options={
-  'damping':0.07,
-  }
+var options = {
+  damping: 0.07,
+};
 
-Scrollbar.init(document.querySelector('#main'),options);
+Scrollbar.init(document.querySelector("#main"), options);
 
 //Typewriter
 var typed = new Typed(".typing", {

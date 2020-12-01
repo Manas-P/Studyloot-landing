@@ -65,7 +65,7 @@ scrollbar .scrollbar-thumb {
   left: 0;
   width: 8px;
   height: 8px;
-  background:rgb(255,77,77,0.7);
+  background: rgba(255, 77, 77, 0.637);
   border-radius: 4px;
 }
 [data-scrollbar] .overscroll-glow,
