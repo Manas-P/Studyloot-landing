@@ -407,7 +407,28 @@ body {
 }
 
 .main .quoteSection {
-  padding: 7.8125vw 0;
+  padding: 9.114583333333334vw 0 20.833333333333332vw 0;
+}
+
+.main .quoteSection .quote {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.main .quoteSection .quote .quoteLeft {
+  position: absolute;
+  width: 4.427083333333333vw;
+  top: -3.90625vw;
+  left: -28.645833333333332vw;
+}
+
+.main .quoteSection .quote .quoteRight {
+  position: absolute;
+  width: 4.427083333333333vw;
+  right: -28.645833333333332vw;
+  bottom: -9.114583333333334vw;
 }
 
 .main .quoteSection .content {
@@ -417,22 +438,9 @@ body {
           transform: translateX(-50%);
 }
 
-.main .quoteSection .content .quoteLeft {
-  position: absolute;
-  width: 4.427083333333333vw;
-  top: -3.90625vw;
-  left: -7.8125vw;
-}
-
 .main .quoteSection .content .text {
   font-family: "Mont-MI";
   font-size: 3.75vw;
-}
-
-.main .quoteSection .content .quoteRight {
-  position: absolute;
-  width: 4.427083333333333vw;
-  right: -7.8125vw;
-  bottom: -3.90625vw;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

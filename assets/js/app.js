@@ -1,10 +1,9 @@
-//Locomotive Scroll
-const locoScroll = new LocomotiveScroll({
-  el: document.querySelector(".main"),
-  smooth: true,
-  direction: "vertical",
-  multiplier:.7,
-});
+// Locomotive Scroll
+// const locoScroll = new LocomotiveScroll({
+//   el: document.querySelector(".main"),
+//   smooth: true,
+//   multiplier:.7,
+// });
 
 
 
@@ -28,3 +27,16 @@ const locoScroll = new LocomotiveScroll({
 //     },4000);
 //     // console.log("Finish");
 // })
+
+//Typewriter
+var typed = new Typed(".typing", {
+  strings: [
+    "Solution",
+    "Code",
+  ],
+  typeSpeed: 70,
+  backSpeed: 80,
+  backDelay: 1500,
+  showCursor: false,
+  loop: true,
+});
