@@ -29,7 +29,7 @@ Scrollbar.init(document.querySelector("#main"), options);
 
 //Button Ripple Effect
 Waves.attach("a");
-Waves.init()
+Waves.init();
 
 //Typewriter
 var typed = new Typed(".typing", {
