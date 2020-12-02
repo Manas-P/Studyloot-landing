@@ -25,8 +25,11 @@ Scrollbar.use(OverscrollPlugin);
 var options = {
   damping: 0.07,
 };
-
 Scrollbar.init(document.querySelector("#main"), options);
+
+//Button Ripple Effect
+Waves.attach("a");
+Waves.init()
 
 //Typewriter
 var typed = new Typed(".typing", {
