@@ -147,7 +147,7 @@ body {
 
 .main {
   height: 100vh;
-  opacity: 0;
+  opacity: 1;
   overflow: auto;
   .heroSection {
     height: 100vh;
@@ -513,19 +513,19 @@ body {
 }
 
 //Preloader
-.preloader {
-  position: fixed;
-  z-index: 10;
-  opacity: 1;
-  background: #fff;
-  transition: all 0.5s ease;
-  overflow: hidden;
-}
-.preloaderFinish {
-  opacity: 0;
-  display: none;
-  pointer-events: none;
-}
-.display {
-  opacity: 1;
-}
+// .preloader {
+//   position: fixed;
+//   z-index: 10;
+//   opacity: 1;
+//   background: #fff;
+//   transition: all 0.5s ease;
+//   overflow: hidden;
+// }
+// .preloaderFinish {
+//   opacity: 0;
+//   display: none;
+//   pointer-events: none;
+// }
+// .display {
+//   opacity: 1;
+// }
