@@ -68,7 +68,7 @@ body {
 
 .main {
   height: 100vh;
-  opacity: 1;
+  opacity: 0;
   overflow: auto;
 }
 
@@ -732,5 +732,25 @@ body {
   height: auto;
   -webkit-animation: heart ease-in-out 2s infinite;
           animation: heart ease-in-out 2s infinite;
+}
+
+.preloader {
+  position: fixed;
+  z-index: 10;
+  opacity: 1;
+  background: #fff;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  overflow: hidden;
+}
+
+.preloaderFinish {
+  opacity: 0;
+  display: none;
+  pointer-events: none;
+}
+
+.display {
+  opacity: 1;
 }
 /*# sourceMappingURL=style.css.map */
