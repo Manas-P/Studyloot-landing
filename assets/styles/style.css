@@ -558,7 +558,7 @@ body {
 }
 
 .main .features .cards .card img {
-  padding-top: 2.1875vw;
+  padding-top: 1.5vw;
   width: 9.0625vw;
   height: auto;
   -webkit-transition: 0.3s;
@@ -570,7 +570,8 @@ body {
   font-size: 1.25vw;
   line-height: 1.9270833333333333vw;
   width: none;
-  padding-bottom: 1.9791666666666667vw;
+  padding-bottom: 2.3vw;
+  font-family: "Mont-SB";
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }

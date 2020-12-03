@@ -376,14 +376,15 @@ body {
           transform: translateZ(10px);
         }
         img {
-          padding-top: 2.1875vw;
+          padding-top: 1.5vw;
           width: 9.0625vw;
           height: auto;
           transition: 0.3s;
         }
         .text {
           @include paragraph(none);
-          padding-bottom: 1.9791666666666667vw;
+          padding-bottom: 2.3vw;
+          font-family: "Mont-SB";
           transition: 0.3s;
         }
       }
