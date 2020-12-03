@@ -70,9 +70,15 @@ body {
   background: #f0f6ff;
 }
 
+.cat {
+  display: none;
+  pointer-events: none;
+}
+
 .main {
   height: 100vh;
   opacity: 1;
+  display: block;
   overflow: auto;
 }
 
@@ -757,5 +763,94 @@ body {
 
 .display {
   opacity: 1;
+}
+
+@media screen and (max-width: 1000px) {
+  .cat {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .cat img {
+    width: 30vw;
+  }
+  .cat .content h1 {
+    font-family: "Mont-SB";
+    font-size: 2.9166666666666665vw;
+    width: none;
+    font-size: 6vw;
+    text-align: center;
+    padding-top: 3vw;
+  }
+  .cat .content p {
+    font-family: "Mont-M";
+    font-size: 1.25vw;
+    line-height: 1.9270833333333333vw;
+    width: none;
+    font-size: 3vw;
+    text-align: center;
+    padding-top: 2vw;
+  }
+  .main {
+    display: none;
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 745px) {
+  .cat img {
+    width: 35vw;
+  }
+  .cat .content h1 {
+    font-family: "Mont-SB";
+    font-size: 2.9166666666666665vw;
+    width: none;
+    font-size: 7vw;
+    padding-top: 4vw;
+  }
+  .cat .content p {
+    font-family: "Mont-M";
+    font-size: 1.25vw;
+    line-height: 1.9270833333333333vw;
+    width: 100vw;
+    font-size: 4vw;
+    padding-top: 4vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .preloader {
+    display: none;
+  }
+  .cat img {
+    width: 40vw;
+  }
+  .cat .content h1 {
+    font-family: "Mont-SB";
+    font-size: 2.9166666666666665vw;
+    width: none;
+    font-size: 8vw;
+    padding-top: 5vw;
+  }
+  .cat .content p {
+    font-family: "Mont-M";
+    font-size: 1.25vw;
+    line-height: 1.9270833333333333vw;
+    width: 100vw;
+    font-size: 5vw;
+    padding-top: 5vw;
+  }
 }
 /*# sourceMappingURL=style.css.map */
