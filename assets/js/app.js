@@ -19,14 +19,6 @@
 //   // console.log("Finish");
 // });
 
-// //smooth-scrollbar
-// var Scrollbar = window.Scrollbar;
-// Scrollbar.use(OverscrollPlugin);
-// var options = {
-//   damping: 0.07,
-// };
-// Scrollbar.init(document.querySelector("#main"), options);
-
 //Button Ripple Effect
 Waves.attach("a");
 Waves.init();
