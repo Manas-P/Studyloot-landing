@@ -845,6 +845,10 @@ body {
 }
 
 @media screen and (max-width: 1000px) {
+  .preloader {
+    display: none;
+    opacity: none;
+  }
   .cat {
     display: -webkit-box;
     display: -ms-flexbox;

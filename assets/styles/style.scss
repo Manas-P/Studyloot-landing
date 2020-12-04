@@ -620,12 +620,12 @@ body {
         }
       }
     }
-    .winnerSection{
-      .contents{
-        img{
-          width:33vw;
+    .winnerSection {
+      .contents {
+        img {
+          width: 33vw;
         }
-        .content{
+        .content {
           .heading {
             font-size: 3.5vw;
           }
@@ -636,21 +636,21 @@ body {
         }
       }
     }
-    .testimonials{
-      min-height:80vw;
-      .container{
-        .title{
-          font-size:3.5vw;
+    .testimonials {
+      min-height: 80vw;
+      .container {
+        .title {
+          font-size: 3.5vw;
         }
-        .slider-indicator{
-          img{
-            width:5.5vw;
-            margin:0 2vw;
+        .slider-indicator {
+          img {
+            width: 5.5vw;
+            margin: 0 2vw;
           }
-          .slider{
-            .slide{
-              p{
-                font-size:1.5vw;
+          .slider {
+            .slide {
+              p {
+                font-size: 1.5vw;
               }
             }
           }
@@ -661,6 +661,10 @@ body {
 }
 
 @media screen and (max-width: 1000px) {
+  .preloader {
+    display: none;
+    opacity: none;
+  }
   .cat {
     display: flex;
     flex-direction: column;
