@@ -1098,3 +1098,253 @@ body {
     }
   }
 }
+
+
+@media screen and (max-width: 450px) {
+  .main {
+    .heroSection {
+      header {
+        height: 20vw;
+        .logoContainer {
+          width: 23vw;
+        }
+        nav {
+          .navLinks {
+            button {
+              font-size: 2.6vw;
+              border: 0.45vw solid $primary;
+              padding: 1.7vw 5vw;
+              border-radius: 1.3vw;
+            }
+          }
+        }
+      }
+      .heroBg {
+        .down {
+          width: 8vw;
+        }
+      }
+      .heroContent {
+        margin-top: 7vw;
+        left: 50%;
+        transform: translateX(-50%);
+        .content {
+          margin-top: 10vw;
+          .heading {
+            @include heading(75vw);
+            font-size: 6vw;
+            line-height: 8vw;
+          }
+          .para {
+            @include paragraph(70vw);
+            font-size: 3.8vw;
+            line-height: 6vw;
+            margin: 3vw 0 5vw 0;
+            margin-left: 2vw;
+          }
+          .btns {
+            position: relative;
+            left: 50%;
+            transform: translateX(-39.5%);
+            a {
+              margin-right: 4vw;
+            }
+            .expBtn,
+            .viewBtn {
+              font-size: 2.6vw;
+              border: 0.45vw solid $primary;
+              padding: 1.7vw 5vw;
+              border-radius: 1.3vw;
+            }
+          }
+        }
+        .images {
+          margin-right: 5vw;
+          height: 47vw;
+          .boyLap {
+            width: 45vw;
+          }
+          .html {
+            @include bubble(40vw, -5vw, none);
+            width: 9vw;
+          }
+          .js {
+            @include bubble(-5vw, 6vw, none);
+            width: 9vw;
+          }
+          .php {
+            @include bubble(8vw, none, 1vw);
+            width: 9vw;
+          }
+          .css {
+            @include bubble(4vw, none, -5vw);
+            width: 9vw;
+          }
+        }
+      }
+    }
+    .focusSection {
+      .contents {
+        padding: 35vw 10.416666666666666vw;
+        img {
+          width: 60vw;
+        }
+        .content {
+          margin-top: 10vw;
+          .heading {
+            @include heading(75vw);
+            font-size: 6vw;
+            line-height: 8vw;
+          }
+          .para {
+            @include paragraph(75vw);
+            font-size: 3.8vw;
+            line-height: 6vw;
+            margin: 3vw 0 5vw 0;
+          }
+        }
+      }
+    }
+    .quoteSection {
+      .quote {
+        .quoteLeft {
+          width:5vw;
+          top: -4.2vw;
+          left: -33vw;
+        }
+        .quoteRight {
+          width:5vw;
+          right: -33vw;
+          bottom: -11;
+        }
+      }
+      .content {
+        .text {
+          font-size: 4.5vw;
+        }
+      }
+    }
+    .introSection {
+      .contents {
+        padding: 39vw 10.416666666666666vw 19vw 10.416666666666666vw ;
+      
+        .content {
+          margin-top: 10vw;
+          .heading {
+            @include heading(75vw);
+            font-size: 6vw;
+            line-height: 8vw;
+          }
+          .para {
+            @include paragraph(75vw);
+            font-size: 3.8vw;
+            line-height: 6vw;
+            margin: 3vw 0 5vw 0;
+          }
+        }
+        img {
+          width: 60vw;
+          order: 1;
+        }
+      }
+    }
+    .features {
+      .cards {
+        grid-template-columns: 1fr;
+        grid-row-gap: 7vw;
+        .card {
+          width: 40vw;
+          height: 40vw;
+          border-radius: 3vw;
+          img {
+            width: 25vw;
+          }
+          .text {
+            font-size: 3.5vw;
+            padding-bottom: 5vw;
+          }
+        }
+      }
+    }
+    .winnerSection {
+      .contents {
+        padding: 39vw 10.416666666666666vw 23vw 10.416666666666666vw;
+        img {
+          width: 35vw;
+        }
+        .content {
+          margin-top: 10vw;
+          .heading {
+            @include heading(75vw);
+            font-size: 6vw;
+            line-height: 8vw;
+          }
+          .para {
+            @include paragraph(75vw);
+            font-size: 3.8vw;
+            line-height: 6vw;
+            margin: 3vw 0 5vw 0;
+          }
+        }
+      }
+    }
+    .testimonials {
+      min-height: 65vh;
+      .container {
+        .quotes {
+          .lq {
+            margin-left: 4vw;
+            margin-top: 35vw;
+            width: 7vw;
+          }
+          .rq {
+            margin-left: 88vw;
+            margin-top: 80vw;
+            width: 7vw;
+          }
+        }
+        .title {
+          font-size: 5.5vw;
+          margin-bottom: 4vw;
+        }
+        .slider-indicator {
+          padding: 5vw 0 3.90625vw 0;
+          text-align-last: center;
+          img {
+            width: 10vw;
+            height: auto;
+            margin: 4vw 7vw;
+          }
+        }
+        .slider {
+          max-width: 80vw;
+          .slide {
+            p {
+              font-size: 4vw;
+              line-height: 5.5vw;
+            }
+            .client-info {
+              margin: 6vw 0;
+              .name {
+                font-size: 3.5vw;
+                margin: 1.5vw 0;
+              }
+              span {
+                font-size: 3vw;
+              }
+            }
+          }
+        }
+      }
+    }
+    footer {
+      height: 5.7vh;
+      h3 {
+        font-size: 3vw;
+        img {
+          width: 2vw;
+        }
+      }
+    }
+  }
+}

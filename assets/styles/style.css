@@ -1413,4 +1413,263 @@ body {
     width: 1.7vw;
   }
 }
+
+@media screen and (max-width: 450px) {
+  .main .heroSection header {
+    height: 20vw;
+  }
+  .main .heroSection header .logoContainer {
+    width: 23vw;
+  }
+  .main .heroSection header nav .navLinks button {
+    font-size: 2.6vw;
+    border: 0.45vw solid #ff4d4d;
+    padding: 1.7vw 5vw;
+    border-radius: 1.3vw;
+  }
+  .main .heroSection .heroBg .down {
+    width: 8vw;
+  }
+  .main .heroSection .heroContent {
+    margin-top: 7vw;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .main .heroSection .heroContent .content {
+    margin-top: 10vw;
+  }
+  .main .heroSection .heroContent .content .heading {
+    font-family: "Mont-SB";
+    font-size: 2.9166666666666665vw;
+    width: 75vw;
+    font-size: 6vw;
+    line-height: 8vw;
+  }
+  .main .heroSection .heroContent .content .para {
+    font-family: "Mont-M";
+    font-size: 1.25vw;
+    line-height: 1.9270833333333333vw;
+    width: 70vw;
+    font-size: 3.8vw;
+    line-height: 6vw;
+    margin: 3vw 0 5vw 0;
+    margin-left: 2vw;
+  }
+  .main .heroSection .heroContent .content .btns {
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-39.5%);
+            transform: translateX(-39.5%);
+  }
+  .main .heroSection .heroContent .content .btns a {
+    margin-right: 4vw;
+  }
+  .main .heroSection .heroContent .content .btns .expBtn,
+  .main .heroSection .heroContent .content .btns .viewBtn {
+    font-size: 2.6vw;
+    border: 0.45vw solid #ff4d4d;
+    padding: 1.7vw 5vw;
+    border-radius: 1.3vw;
+  }
+  .main .heroSection .heroContent .images {
+    margin-right: 5vw;
+    height: 47vw;
+  }
+  .main .heroSection .heroContent .images .boyLap {
+    width: 45vw;
+  }
+  .main .heroSection .heroContent .images .html {
+    position: absolute;
+    width: 6.25vw;
+    top: 40vw;
+    left: -5vw;
+    right: none;
+    width: 9vw;
+  }
+  .main .heroSection .heroContent .images .js {
+    position: absolute;
+    width: 6.25vw;
+    top: -5vw;
+    left: 6vw;
+    right: none;
+    width: 9vw;
+  }
+  .main .heroSection .heroContent .images .php {
+    position: absolute;
+    width: 6.25vw;
+    top: 8vw;
+    left: none;
+    right: 1vw;
+    width: 9vw;
+  }
+  .main .heroSection .heroContent .images .css {
+    position: absolute;
+    width: 6.25vw;
+    top: 4vw;
+    left: none;
+    right: -5vw;
+    width: 9vw;
+  }
+  .main .focusSection .contents {
+    padding: 35vw 10.416666666666666vw;
+  }
+  .main .focusSection .contents img {
+    width: 60vw;
+  }
+  .main .focusSection .contents .content {
+    margin-top: 10vw;
+  }
+  .main .focusSection .contents .content .heading {
+    font-family: "Mont-SB";
+    font-size: 2.9166666666666665vw;
+    width: 75vw;
+    font-size: 6vw;
+    line-height: 8vw;
+  }
+  .main .focusSection .contents .content .para {
+    font-family: "Mont-M";
+    font-size: 1.25vw;
+    line-height: 1.9270833333333333vw;
+    width: 75vw;
+    font-size: 3.8vw;
+    line-height: 6vw;
+    margin: 3vw 0 5vw 0;
+  }
+  .main .quoteSection .quote .quoteLeft {
+    width: 5vw;
+    top: -4.2vw;
+    left: -33vw;
+  }
+  .main .quoteSection .quote .quoteRight {
+    width: 5vw;
+    right: -33vw;
+    bottom: -11;
+  }
+  .main .quoteSection .content .text {
+    font-size: 4.5vw;
+  }
+  .main .introSection .contents {
+    padding: 39vw 10.416666666666666vw 19vw 10.416666666666666vw;
+  }
+  .main .introSection .contents .content {
+    margin-top: 10vw;
+  }
+  .main .introSection .contents .content .heading {
+    font-family: "Mont-SB";
+    font-size: 2.9166666666666665vw;
+    width: 75vw;
+    font-size: 6vw;
+    line-height: 8vw;
+  }
+  .main .introSection .contents .content .para {
+    font-family: "Mont-M";
+    font-size: 1.25vw;
+    line-height: 1.9270833333333333vw;
+    width: 75vw;
+    font-size: 3.8vw;
+    line-height: 6vw;
+    margin: 3vw 0 5vw 0;
+  }
+  .main .introSection .contents img {
+    width: 60vw;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .main .features .cards {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-row-gap: 7vw;
+  }
+  .main .features .cards .card {
+    width: 40vw;
+    height: 40vw;
+    border-radius: 3vw;
+  }
+  .main .features .cards .card img {
+    width: 25vw;
+  }
+  .main .features .cards .card .text {
+    font-size: 3.5vw;
+    padding-bottom: 5vw;
+  }
+  .main .winnerSection .contents {
+    padding: 39vw 10.416666666666666vw 23vw 10.416666666666666vw;
+  }
+  .main .winnerSection .contents img {
+    width: 35vw;
+  }
+  .main .winnerSection .contents .content {
+    margin-top: 10vw;
+  }
+  .main .winnerSection .contents .content .heading {
+    font-family: "Mont-SB";
+    font-size: 2.9166666666666665vw;
+    width: 75vw;
+    font-size: 6vw;
+    line-height: 8vw;
+  }
+  .main .winnerSection .contents .content .para {
+    font-family: "Mont-M";
+    font-size: 1.25vw;
+    line-height: 1.9270833333333333vw;
+    width: 75vw;
+    font-size: 3.8vw;
+    line-height: 6vw;
+    margin: 3vw 0 5vw 0;
+  }
+  .main .testimonials {
+    min-height: 65vh;
+  }
+  .main .testimonials .container .quotes .lq {
+    margin-left: 4vw;
+    margin-top: 35vw;
+    width: 7vw;
+  }
+  .main .testimonials .container .quotes .rq {
+    margin-left: 88vw;
+    margin-top: 80vw;
+    width: 7vw;
+  }
+  .main .testimonials .container .title {
+    font-size: 5.5vw;
+    margin-bottom: 4vw;
+  }
+  .main .testimonials .container .slider-indicator {
+    padding: 5vw 0 3.90625vw 0;
+    text-align-last: center;
+  }
+  .main .testimonials .container .slider-indicator img {
+    width: 10vw;
+    height: auto;
+    margin: 4vw 7vw;
+  }
+  .main .testimonials .container .slider {
+    max-width: 80vw;
+  }
+  .main .testimonials .container .slider .slide p {
+    font-size: 4vw;
+    line-height: 5.5vw;
+  }
+  .main .testimonials .container .slider .slide .client-info {
+    margin: 6vw 0;
+  }
+  .main .testimonials .container .slider .slide .client-info .name {
+    font-size: 3.5vw;
+    margin: 1.5vw 0;
+  }
+  .main .testimonials .container .slider .slide .client-info span {
+    font-size: 3vw;
+  }
+  .main footer {
+    height: 5.7vh;
+  }
+  .main footer h3 {
+    font-size: 3vw;
+  }
+  .main footer h3 img {
+    width: 2vw;
+  }
+}
 /*# sourceMappingURL=style.css.map */
