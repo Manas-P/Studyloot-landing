@@ -16,7 +16,7 @@ html {
 
 //Scrollbar
 ::-webkit-scrollbar {
-  width: 0.5vw;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
@@ -34,10 +34,6 @@ body {
   background: $bg;
 }
 
-// .cat {
-//   display: none;
-//   pointer-events: none;
-// }
 
 .main {
   // height: 100vh;
