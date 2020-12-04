@@ -74,7 +74,7 @@ html {
 
 ::-webkit-scrollbar-track {
   border: none;
-  background: rgba(255, 255, 255, 0);
+  background: #ff4d4d33;
   color: rgba(255, 255, 255, 0);
 }
 
