@@ -520,22 +520,22 @@ body {
 }
 
 //Preloader
-.preloader {
-  position: fixed;
-  z-index: 10;
-  opacity: 1;
-  background: #fff;
-  transition: all 0.5s ease;
-  overflow: hidden;
-}
-.preloaderFinish {
-  opacity: 0;
-  display: none;
-  pointer-events: none;
-}
-.display {
-  opacity: 1;
-}
+// .preloader {
+//   position: fixed;
+//   z-index: 10;
+//   opacity: 1;
+//   background: #fff;
+//   transition: all 0.5s ease;
+//   overflow: hidden;
+// }
+// .preloaderFinish {
+//   opacity: 0;
+//   display: none;
+//   pointer-events: none;
+// }
+// .display {
+//   opacity: 1;
+// }
 
 // @media screen and (max-width: 1370px) {
 //   .main {
