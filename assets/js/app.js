@@ -19,35 +19,13 @@ window.addEventListener("load", () => {
   // console.log("Finish");
 });
 
-//smooth-scrollbar
-var Scrollbar = window.Scrollbar;
-Scrollbar.use(OverscrollPlugin);
-var options = {
-  damping: 0.07,
-};
-Scrollbar.init(document.querySelector("#main"), options);
-
-function MobilePlugin() {
-  Scrollbar.ScrollbarPlugin.apply(this, arguments);
-}
-
-MobilePlugin.prototype = Object.create(Scrollbar.ScrollbarPlugin.prototype);
-
-MobilePlugin.prototype.transformDelta = function (delta, fromEvent) {
-  if (fromEvent.type !== "touchend") {
-    return delta;
-  }
-
-  return {
-    x: delta.x * this.options.speed,
-    y: delta.y * this.options.speed,
-  };
-};
-
-MobilePlugin.pluginName = "filterEvent";
-MobilePlugin.defaultOptions = {
-  speed: 0.5,
-};
+// //smooth-scrollbar
+// var Scrollbar = window.Scrollbar;
+// Scrollbar.use(OverscrollPlugin);
+// var options = {
+//   damping: 0.07,
+// };
+// Scrollbar.init(document.querySelector("#main"), options);
 
 //Button Ripple Effect
 Waves.attach("a");
