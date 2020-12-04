@@ -68,6 +68,20 @@ html {
   scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+  width: 0.5vw;
+}
+
+::-webkit-scrollbar-track {
+  border: none;
+  background: rgba(255, 255, 255, 0);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff4d4d73;
+  border-radius: 10px;
+}
+
 body {
   overflow-x: hidden;
   background: #f0f6ff;
