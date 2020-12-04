@@ -738,4 +738,139 @@ body {
   -webkit-animation: heart ease-in-out 2s infinite;
           animation: heart ease-in-out 2s infinite;
 }
+
+@media screen and (max-width: 1300px) {
+  .main .heroSection header {
+    height: 9.5vw;
+  }
+  .main .heroSection header .logoContainer {
+    width: 11vw;
+  }
+  .main .heroSection header nav .navLinks button {
+    font-size: 1.5vw;
+    border: 0.2vw solid #ff4d4d;
+  }
+  .main .heroSection .heroBg .down {
+    width: 4vw;
+  }
+  .main .heroSection .heroContent .content .heading {
+    font-size: 3.6vw;
+  }
+  .main .heroSection .heroContent .content .para {
+    font-size: 1.5vw;
+    line-height: 2.5vw;
+  }
+  .main .heroSection .heroContent .content .btns a {
+    margin-right: 2vw;
+  }
+  .main .heroSection .heroContent .content .btns .expBtn,
+  .main .heroSection .heroContent .content .btns .viewBtn {
+    font-size: 1.5vw;
+    border: 0.2vw solid #ff4d4d;
+  }
+  .main .heroSection .heroContent .images .boyLap {
+    width: 24vw;
+  }
+  .main .focusSection .contents img {
+    width: 35vw;
+  }
+  .main .focusSection .contents .content .heading {
+    font-size: 3.6vw;
+  }
+  .main .focusSection .contents .content .para {
+    font-size: 1.5vw;
+    line-height: 2.5vw;
+  }
+  .main .quoteSection .quote .quoteLeft {
+    top: -4.2vw;
+    left: -33vw;
+  }
+  .main .quoteSection .quote .quoteRight {
+    right: -33vw;
+    bottom: -11;
+  }
+  .main .quoteSection .content .text {
+    font-size: 4.5vw;
+  }
+  .main .introSection .contents .content .heading {
+    font-size: 3.6vw;
+  }
+  .main .introSection .contents .content .para {
+    font-size: 1.5vw;
+    line-height: 2.5vw;
+  }
+  .main .introSection .contents img {
+    width: 38.802083333333336vw;
+  }
+  .main .features .cards .card {
+    width: 16.7vw;
+    height: 16.7vw;
+  }
+  .main .features .cards .card .text {
+    font-size: 1.5vw;
+  }
+  .main .winnerSection .contents img {
+    width: 25.520833333333332vw;
+  }
+  .main .winnerSection .contents .content .heading {
+    font-size: 3.6vw;
+  }
+  .main .winnerSection .contents .content .para {
+    font-size: 1.5vw;
+    line-height: 2.5vw;
+  }
+  .main .testimonials {
+    min-height: 70vh;
+  }
+  .main .testimonials .container .quotes .lq {
+    position: absolute;
+    margin-left: 20.833333333333332vw;
+    margin-top: 15.625vw;
+    width: 4.427083333333333vw;
+    height: auto;
+  }
+  .main .testimonials .container .quotes .rq {
+    position: absolute;
+    margin-left: 72.91666666666667vw;
+    margin-top: 28.645833333333332vw;
+    width: 4.427083333333333vw;
+    height: auto;
+  }
+  .main .testimonials .container .title {
+    font-size: 3.6vw;
+    margin-bottom: 4.5vw;
+  }
+  .main .testimonials .container .slider-indicator {
+    padding: 2.6041666666666665vw 0 3.90625vw 0;
+    text-align-last: center;
+  }
+  .main .testimonials .container .slider-indicator img {
+    width: 5.2vw;
+    height: auto;
+    margin: 0 2vw;
+  }
+  .main .testimonials .container .slider .slide p {
+    font-size: 1.5vw;
+    line-height: 2.5vw;
+  }
+  .main .testimonials .container .slider .slide .client-info {
+    margin: 2vw 0;
+  }
+  .main .testimonials .container .slider .slide .client-info .name {
+    font-size: 1.2vw;
+    margin: 0.7vw 0;
+  }
+  .main .testimonials .container .slider .slide .client-info span {
+    font-size: 1vw;
+  }
+  .main footer {
+    height: 5vh;
+  }
+  .main footer h3 {
+    font-size: 1.35vw;
+  }
+  .main footer h3 img {
+    width: 1vw;
+  }
+}
 /*# sourceMappingURL=style.css.map */

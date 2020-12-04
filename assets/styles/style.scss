@@ -1,133 +1,4 @@
-// Variables
-$bg: #f0f6ff;
-$primary: #ff4d4d;
-$black: #252525;
-$white: #fff;
-
-//Mixins
-
-//Button
-@mixin btn($clr, $btnBg, $hovBg, $hovClr) {
-  position: relative;
-  color: $clr;
-  outline: none;
-  background: $btnBg;
-  border-radius: 0.5208333333333334vw;
-  font-size: 0.9375vw;
-  font-family: "Mont-SB";
-  padding: 0.625vw 1.9791666666666667vw;
-  border: 0.10416666666666667vw solid $primary;
-  cursor: pointer;
-  transition: 0.3s ease;
-  &:hover {
-    background: $hovBg;
-    color: $hovClr;
-  }
-}
-
-//Heading
-@mixin heading($width) {
-  font-family: "Mont-SB";
-  font-size: 2.9166666666666665vw;
-  width: $width;
-}
-
-//Paragraph
-@mixin paragraph($width) {
-  font-family: "Mont-M";
-  font-size: 1.25vw;
-  line-height: 1.9270833333333333vw;
-  width: $width;
-}
-
-//Hero Bubbles
-@mixin bubble($top, $left, $right) {
-  position: absolute;
-  width: 6.25vw;
-  top: $top;
-  left: $left;
-  right: $right;
-}
-
-//Hero Section Animation
-@mixin animationpath($pos) {
-  0% {
-    top: $pos;
-  }
-  50% {
-    top: calc(#{$pos} + 1.0416666666666667vw);
-  }
-  100% {
-    top: $pos;
-  }
-}
-
-@mixin htmlanim($pos) {
-  animation: htmlanimation ease-in-out 5s infinite;
-  @keyframes htmlanimation {
-    @include animationpath($pos);
-  }
-}
-
-@mixin jsanim($pos) {
-  animation: jsanimation ease-in-out 3s infinite;
-  @keyframes jsanimation {
-    @include animationpath($pos);
-  }
-}
-
-@mixin phpanim($pos) {
-  animation: phpanimation ease-in-out 6s infinite;
-  @keyframes phpanimation {
-    @include animationpath($pos);
-  }
-}
-
-@mixin cssanim($pos) {
-  animation: cssanimation ease-in-out 4s infinite;
-  @keyframes cssanimation {
-    @include animationpath($pos);
-  }
-}
-
-//Footer Heart Animatio
-@keyframes heart {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.4);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-//Fonts
-@font-face {
-  font-family: "Mont-R";
-  src: url(../fonts/Montserrat-Regular.ttf);
-}
-
-@font-face {
-  font-family: "Mont-M";
-  src: url(../fonts/Montserrat-Medium.ttf);
-}
-
-@font-face {
-  font-family: "Mont-SB";
-  src: url(../fonts/Montserrat-SemiBold.ttf);
-}
-
-@font-face {
-  font-family: "Mont-B";
-  src: url(../fonts/Montserrat-Bold.ttf);
-}
-
-@font-face {
-  font-family: "Mont-MI";
-  src: url(../fonts/Montserrat-MediumItalic.ttf);
-}
+@import "./mixins.scss";
 
 a {
   text-decoration: none;
@@ -537,207 +408,192 @@ body {
 //   opacity: 1;
 // }
 
-// @media screen and (max-width: 1370px) {
-//   .main {
-//     .heroSection {
-//       header {
-//         height: 7.5vw;
-//         .logoContainer {
-//           width: 10vw;
-//         }
-//         nav {
-//           .navLinks {
-//             button {
-//               font-size: 1.4vw;
-//               border: 0.2vw solid $primary;
-//             }
-//           }
-//         }
-//       }
-//       .heroContent {
-//         .content {
-//           .heading {
-//             font-size: 3.7vw;
-//           }
-//           .para {
-//             font-size: 1.75vw;
-//             line-height: 2.5vw;
-//           }
-//           .btns {
-//             .expBtn {
-//               font-size: 1.4vw;
-//               border: 0.2vw solid $primary;
-//             }
-//             .viewBtn {
-//               font-size: 1.4vw;
-//               border: 0.2vw solid $primary;
-//             }
-//           }
-//         }
-//         .images {
-//           height: 34vw;
-//           width: 40vw;
-//         }
-//       }
-//     }
-//     .focusSection {
-//       .contents {
-//         img {
-//           width: 35vw;
-//         }
-//         .content {
-//           .heading {
-//             font-size: 3.5vw;
-//           }
-//           .para {
-//             font-size: 1.65vw;
-//             line-height: 2.5vw;
-//           }
-//         }
-//       }
-//     }
-//     .introSection {
-//       .contents {
-//         .content {
-//           .heading {
-//             font-size: 3.5vw;
-//           }
-//           .para {
-//             font-size: 1.65vw;
-//             line-height: 2.5vw;
-//           }
-//         }
-//         img {
-//           width: 36vw;
-//         }
-//       }
-//     }
-//     .featuresSection {
-//       .cards {
-//         .card {
-//           width: 18vw;
-//           height: 18vw;
-//         }
-//       }
-//     }
-//     .winnerSection {
-//       .contents {
-//         img {
-//           width: 33vw;
-//         }
-//         .content {
-//           .heading {
-//             font-size: 3.5vw;
-//           }
-//           .para {
-//             font-size: 1.65vw;
-//             line-height: 2.5vw;
-//           }
-//         }
-//       }
-//     }
-//     .testimonials {
-//       min-height: 80vw;
-//       .container {
-//         .title {
-//           font-size: 3.5vw;
-//         }
-//         .slider-indicator {
-//           img {
-//             width: 5.5vw;
-//             margin: 0 2vw;
-//           }
-//           .slider {
-//             .slide {
-//               p {
-//                 font-size: 1.5vw;
-//               }
-//             }
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
-
-// @media screen and (max-width: 1000px) {
-//   .preloader {
-//     display: none;
-//     opacity: none;
-//   }
-//   .cat {
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     position: absolute;
-//     top: 50%;
-//     left: 50%;
-//     transform: translate(-50%, -50%);
-//     img {
-//       width: 30vw;
-//     }
-//     .content {
-//       h1 {
-//         @include heading(none);
-//         font-size: 6vw;
-//         text-align: center;
-//         padding-top: 3vw;
-//       }
-//       p {
-//         @include paragraph(none);
-//         font-size: 3vw;
-//         text-align: center;
-//         padding-top: 2vw;
-//       }
-//     }
-//   }
-
-//   .main {
-//     display: none;
-//     opacity: 0;
-//   }
-// }
-
-// @media screen and (max-width: 745px) {
-//   .cat {
-//     img {
-//       width: 35vw;
-//     }
-//     .content {
-//       h1 {
-//         @include heading(none);
-//         font-size: 7vw;
-//         padding-top: 4vw;
-//       }
-//       p {
-//         @include paragraph(100vw);
-//         font-size: 4vw;
-//         padding-top: 4vw;
-//       }
-//     }
-//   }
-// }
-
-// @media screen and (max-width: 500px) {
-//   .preloader {
-//     display: none;
-//   }
-
-//   .cat {
-//     img {
-//       width: 40vw;
-//     }
-//     .content {
-//       h1 {
-//         @include heading(none);
-//         font-size: 8vw;
-//         padding-top: 5vw;
-//       }
-//       p {
-//         @include paragraph(100vw);
-//         font-size: 5vw;
-//         padding-top: 5vw;
-//       }
-//     }
-//   }
-// }
+//Responsive
+@media screen and (max-width: 1300px) {
+  .main {
+    .heroSection {
+      header {
+        height: 9.5vw;
+        .logoContainer {
+          width: 11vw;
+        }
+        nav {
+          .navLinks {
+            button {
+              font-size: 1.5vw;
+              border: 0.2vw solid $primary;
+            }
+          }
+        }
+      }
+      .heroBg {
+        .down {
+          width: 4vw;
+        }
+      }
+      .heroContent {
+        .content {
+          .heading {
+            font-size: 3.6vw;
+          }
+          .para {
+            font-size: 1.5vw;
+            line-height: 2.5vw;
+          }
+          .btns {
+            a {
+              margin-right: 2vw;
+            }
+            .expBtn,
+            .viewBtn {
+              font-size: 1.5vw;
+              border: 0.2vw solid $primary;
+            }
+          }
+        }
+        .images {
+          .boyLap {
+            width: 24vw;
+          }
+        }
+      }
+    }
+    .focusSection {
+      .contents {
+        img {
+          width: 35vw;
+        }
+        .content {
+          .heading {
+            font-size: 3.6vw;
+          }
+          .para {
+            font-size: 1.5vw;
+            line-height: 2.5vw;
+          }
+        }
+      }
+    }
+    .quoteSection {
+      .quote {
+        .quoteLeft {
+          top: -4.2vw;
+          left: -33vw;
+        }
+        .quoteRight {
+          right: -33vw;
+          bottom: -11;
+        }
+      }
+      .content {
+        .text {
+          font-size: 4.5vw;
+        }
+      }
+    }
+    .introSection {
+      .contents {
+        .content {
+          .heading {
+            font-size: 3.6vw;
+          }
+          .para {
+            font-size: 1.5vw;
+            line-height: 2.5vw;
+          }
+        }
+        img {
+          width: 38.802083333333336vw;
+        }
+      }
+    }
+    .features {
+      .cards {
+        .card {
+          width: 16.7vw;
+          height: 16.7vw;
+          .text {
+            font-size: 1.5vw;
+          }
+        }
+      }
+    }
+    .winnerSection {
+      .contents {
+        img {
+          width: 25.520833333333332vw;
+        }
+        .content {
+          .heading {
+            font-size: 3.6vw;
+          }
+          .para {
+            font-size: 1.5vw;
+            line-height: 2.5vw;
+          }
+        }
+      }
+    }
+    .testimonials {
+      min-height: 70vh;
+      .container {
+        .quotes {
+          .lq {
+            position: absolute;
+            margin-left: 20.833333333333332vw;
+            margin-top: 15.625vw;
+            width: 4.427083333333333vw;
+            height: auto;
+          }
+          .rq {
+            position: absolute;
+            margin-left: 72.91666666666667vw;
+            margin-top: 28.645833333333332vw;
+            width: 4.427083333333333vw;
+            height: auto;
+          }
+        }
+        .title {
+          font-size: 3.6vw;
+          margin-bottom: 4.5vw;
+        }
+        .slider-indicator {
+          padding: 2.6041666666666665vw 0 3.90625vw 0;
+          text-align-last: center;
+          img {
+            width: 5.2vw;
+            height: auto;
+            margin: 0 2vw;
+          }
+        }
+        .slider {
+          .slide {
+            p {
+              font-size: 1.5vw;
+              line-height: 2.5vw;
+            }
+            .client-info {
+              margin: 2vw 0;
+              .name {
+                font-size: 1.2vw;
+                margin: 0.7vw 0;
+              }
+              span {
+                font-size: 1vw;
+              }
+            }
+          }
+        }
+      }
+    }
+    footer {
+      height: 5vh;
+      h3 {
+        font-size: 1.35vw;
+        img {
+          width: 1vw;
+        }
+      }
+    }
+  }
+}
