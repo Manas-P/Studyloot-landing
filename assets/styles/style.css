@@ -88,7 +88,7 @@ body {
 }
 
 .main {
-  opacity: 1;
+  opacity: 0;
   display: block;
   overflow: auto;
 }
@@ -752,6 +752,38 @@ body {
   height: auto;
   -webkit-animation: heart ease-in-out 2s infinite;
           animation: heart ease-in-out 2s infinite;
+}
+
+.preloader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 100vh;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 10;
+  opacity: 1;
+  background: #fff;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.preloader:after {
+  content: "";
+  height: 100vh;
+  width: 100vw;
+  background: #fff;
+}
+
+.preloaderFinish {
+  opacity: 0;
+  display: none;
+  pointer-events: none;
+}
+
+.display {
+  opacity: 1;
 }
 
 @media screen and (max-width: 1300px) {
@@ -1432,6 +1464,9 @@ body {
 }
 
 @media screen and (max-width: 450px) {
+  .preloader {
+    width: 160vw;
+  }
   .main .heroSection header {
     height: 20vw;
   }

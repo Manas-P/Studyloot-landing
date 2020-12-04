@@ -41,7 +41,7 @@ body {
 
 .main {
   // height: 100vh;
-  opacity: 1;
+  opacity: 0;
   display: block;
   overflow: auto;
   .heroSection {
@@ -409,22 +409,32 @@ body {
 }
 
 //Preloader
-// .preloader {
-//   position: fixed;
-//   z-index: 10;
-//   opacity: 1;
-//   background: #fff;
-//   transition: all 0.5s ease;
-//   overflow: hidden;
-// }
-// .preloaderFinish {
-//   opacity: 0;
-//   display: none;
-//   pointer-events: none;
-// }
-// .display {
-//   opacity: 1;
-// }
+.preloader {
+  position: fixed;
+  top:50%;
+  left:50%;
+  width:100vw;
+  height:100vh;
+  transform: translate(-50%,-50%);
+  z-index: 10;
+  opacity: 1;
+  background: #fff;
+  transition: all 0.5s ease;
+  &:after{
+    content: "";
+    height:100vh;
+    width:100vw;
+    background:$white;
+  }
+}
+.preloaderFinish {
+  opacity: 0;
+  display: none;
+  pointer-events: none;
+}
+.display {
+  opacity: 1;
+}
 
 //Responsive
 @media screen and (max-width: 1300px) {
@@ -1118,6 +1128,9 @@ body {
 }
 
 @media screen and (max-width: 450px) {
+  .preloader{
+    width:160vw;
+  }
   .main {
     .heroSection {
       header {
