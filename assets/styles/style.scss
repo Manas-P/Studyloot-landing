@@ -145,10 +145,10 @@ body {
   background: $bg;
 }
 
-.cat {
-  display: none;
-  pointer-events: none;
-}
+// .cat {
+//   display: none;
+//   pointer-events: none;
+// }
 
 .main {
   height: 100vh;
@@ -537,207 +537,207 @@ body {
   opacity: 1;
 }
 
-@media screen and (max-width: 1370px) {
-  .main {
-    .heroSection {
-      header {
-        height: 7.5vw;
-        .logoContainer {
-          width: 10vw;
-        }
-        nav {
-          .navLinks {
-            button {
-              font-size: 1.4vw;
-              border: 0.2vw solid $primary;
-            }
-          }
-        }
-      }
-      .heroContent {
-        .content {
-          .heading {
-            font-size: 3.7vw;
-          }
-          .para {
-            font-size: 1.75vw;
-            line-height: 2.5vw;
-          }
-          .btns {
-            .expBtn {
-              font-size: 1.4vw;
-              border: 0.2vw solid $primary;
-            }
-            .viewBtn {
-              font-size: 1.4vw;
-              border: 0.2vw solid $primary;
-            }
-          }
-        }
-        .images {
-          height: 34vw;
-          width: 40vw;
-        }
-      }
-    }
-    .focusSection {
-      .contents {
-        img {
-          width: 35vw;
-        }
-        .content {
-          .heading {
-            font-size: 3.5vw;
-          }
-          .para {
-            font-size: 1.65vw;
-            line-height: 2.5vw;
-          }
-        }
-      }
-    }
-    .introSection {
-      .contents {
-        .content {
-          .heading {
-            font-size: 3.5vw;
-          }
-          .para {
-            font-size: 1.65vw;
-            line-height: 2.5vw;
-          }
-        }
-        img {
-          width: 36vw;
-        }
-      }
-    }
-    .featuresSection {
-      .cards {
-        .card {
-          width: 18vw;
-          height: 18vw;
-        }
-      }
-    }
-    .winnerSection {
-      .contents {
-        img {
-          width: 33vw;
-        }
-        .content {
-          .heading {
-            font-size: 3.5vw;
-          }
-          .para {
-            font-size: 1.65vw;
-            line-height: 2.5vw;
-          }
-        }
-      }
-    }
-    .testimonials {
-      min-height: 80vw;
-      .container {
-        .title {
-          font-size: 3.5vw;
-        }
-        .slider-indicator {
-          img {
-            width: 5.5vw;
-            margin: 0 2vw;
-          }
-          .slider {
-            .slide {
-              p {
-                font-size: 1.5vw;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
+// @media screen and (max-width: 1370px) {
+//   .main {
+//     .heroSection {
+//       header {
+//         height: 7.5vw;
+//         .logoContainer {
+//           width: 10vw;
+//         }
+//         nav {
+//           .navLinks {
+//             button {
+//               font-size: 1.4vw;
+//               border: 0.2vw solid $primary;
+//             }
+//           }
+//         }
+//       }
+//       .heroContent {
+//         .content {
+//           .heading {
+//             font-size: 3.7vw;
+//           }
+//           .para {
+//             font-size: 1.75vw;
+//             line-height: 2.5vw;
+//           }
+//           .btns {
+//             .expBtn {
+//               font-size: 1.4vw;
+//               border: 0.2vw solid $primary;
+//             }
+//             .viewBtn {
+//               font-size: 1.4vw;
+//               border: 0.2vw solid $primary;
+//             }
+//           }
+//         }
+//         .images {
+//           height: 34vw;
+//           width: 40vw;
+//         }
+//       }
+//     }
+//     .focusSection {
+//       .contents {
+//         img {
+//           width: 35vw;
+//         }
+//         .content {
+//           .heading {
+//             font-size: 3.5vw;
+//           }
+//           .para {
+//             font-size: 1.65vw;
+//             line-height: 2.5vw;
+//           }
+//         }
+//       }
+//     }
+//     .introSection {
+//       .contents {
+//         .content {
+//           .heading {
+//             font-size: 3.5vw;
+//           }
+//           .para {
+//             font-size: 1.65vw;
+//             line-height: 2.5vw;
+//           }
+//         }
+//         img {
+//           width: 36vw;
+//         }
+//       }
+//     }
+//     .featuresSection {
+//       .cards {
+//         .card {
+//           width: 18vw;
+//           height: 18vw;
+//         }
+//       }
+//     }
+//     .winnerSection {
+//       .contents {
+//         img {
+//           width: 33vw;
+//         }
+//         .content {
+//           .heading {
+//             font-size: 3.5vw;
+//           }
+//           .para {
+//             font-size: 1.65vw;
+//             line-height: 2.5vw;
+//           }
+//         }
+//       }
+//     }
+//     .testimonials {
+//       min-height: 80vw;
+//       .container {
+//         .title {
+//           font-size: 3.5vw;
+//         }
+//         .slider-indicator {
+//           img {
+//             width: 5.5vw;
+//             margin: 0 2vw;
+//           }
+//           .slider {
+//             .slide {
+//               p {
+//                 font-size: 1.5vw;
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
 
-@media screen and (max-width: 1000px) {
-  .preloader {
-    display: none;
-    opacity: none;
-  }
-  .cat {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    img {
-      width: 30vw;
-    }
-    .content {
-      h1 {
-        @include heading(none);
-        font-size: 6vw;
-        text-align: center;
-        padding-top: 3vw;
-      }
-      p {
-        @include paragraph(none);
-        font-size: 3vw;
-        text-align: center;
-        padding-top: 2vw;
-      }
-    }
-  }
+// @media screen and (max-width: 1000px) {
+//   .preloader {
+//     display: none;
+//     opacity: none;
+//   }
+//   .cat {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//     img {
+//       width: 30vw;
+//     }
+//     .content {
+//       h1 {
+//         @include heading(none);
+//         font-size: 6vw;
+//         text-align: center;
+//         padding-top: 3vw;
+//       }
+//       p {
+//         @include paragraph(none);
+//         font-size: 3vw;
+//         text-align: center;
+//         padding-top: 2vw;
+//       }
+//     }
+//   }
 
-  .main {
-    display: none;
-    opacity: 0;
-  }
-}
+//   .main {
+//     display: none;
+//     opacity: 0;
+//   }
+// }
 
-@media screen and (max-width: 745px) {
-  .cat {
-    img {
-      width: 35vw;
-    }
-    .content {
-      h1 {
-        @include heading(none);
-        font-size: 7vw;
-        padding-top: 4vw;
-      }
-      p {
-        @include paragraph(100vw);
-        font-size: 4vw;
-        padding-top: 4vw;
-      }
-    }
-  }
-}
+// @media screen and (max-width: 745px) {
+//   .cat {
+//     img {
+//       width: 35vw;
+//     }
+//     .content {
+//       h1 {
+//         @include heading(none);
+//         font-size: 7vw;
+//         padding-top: 4vw;
+//       }
+//       p {
+//         @include paragraph(100vw);
+//         font-size: 4vw;
+//         padding-top: 4vw;
+//       }
+//     }
+//   }
+// }
 
-@media screen and (max-width: 500px) {
-  .preloader {
-    display: none;
-  }
+// @media screen and (max-width: 500px) {
+//   .preloader {
+//     display: none;
+//   }
 
-  .cat {
-    img {
-      width: 40vw;
-    }
-    .content {
-      h1 {
-        @include heading(none);
-        font-size: 8vw;
-        padding-top: 5vw;
-      }
-      p {
-        @include paragraph(100vw);
-        font-size: 5vw;
-        padding-top: 5vw;
-      }
-    }
-  }
-}
+//   .cat {
+//     img {
+//       width: 40vw;
+//     }
+//     .content {
+//       h1 {
+//         @include heading(none);
+//         font-size: 8vw;
+//         padding-top: 5vw;
+//       }
+//       p {
+//         @include paragraph(100vw);
+//         font-size: 5vw;
+//         padding-top: 5vw;
+//       }
+//     }
+//   }
+// }
