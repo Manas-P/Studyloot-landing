@@ -75,6 +75,7 @@ html {
 ::-webkit-scrollbar-track {
   border: none;
   background: rgba(255, 255, 255, 0);
+  color: rgba(255, 255, 255, 0);
 }
 
 ::-webkit-scrollbar-thumb {

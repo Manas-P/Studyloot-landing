@@ -15,7 +15,7 @@ window.addEventListener("load", () => {
   setTimeout(() => {
     preloader.classList.add("preloaderFinish");
     main.classList.add("display");
-  }, 10);
+  }, 3000);
   // console.log("Finish");
 });
 
