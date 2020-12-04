@@ -10,7 +10,10 @@ a {
   box-sizing: border-box;
 }
 
-html,
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-x: hidden;
   background: $bg;
@@ -975,8 +978,8 @@ body {
     }
     .introSection {
       .contents {
-        padding: 28vw 10.416666666666666vw 19vw 10.416666666666666vw ;
-      
+        padding: 28vw 10.416666666666666vw 19vw 10.416666666666666vw;
+
         .content {
           margin-top: 7vw;
           .heading {
@@ -1099,7 +1102,6 @@ body {
   }
 }
 
-
 @media screen and (max-width: 450px) {
   .main {
     .heroSection {
@@ -1208,12 +1210,12 @@ body {
     .quoteSection {
       .quote {
         .quoteLeft {
-          width:5vw;
+          width: 5vw;
           top: -4.2vw;
           left: -33vw;
         }
         .quoteRight {
-          width:5vw;
+          width: 5vw;
           right: -33vw;
           bottom: -11;
         }
@@ -1226,8 +1228,8 @@ body {
     }
     .introSection {
       .contents {
-        padding: 39vw 10.416666666666666vw 19vw 10.416666666666666vw ;
-      
+        padding: 39vw 10.416666666666666vw 19vw 10.416666666666666vw;
+
         .content {
           margin-top: 10vw;
           .heading {
