@@ -849,3 +849,252 @@ body {
     }
   }
 }
+
+@media screen and (max-width: 700px) {
+  .main {
+    .heroSection {
+      header {
+        height: 17vw;
+        .logoContainer {
+          width: 18vw;
+        }
+        nav {
+          .navLinks {
+            button {
+              font-size: 1.9vw;
+              border: 0.4vw solid $primary;
+              padding: 1.5vw 4vw;
+              border-radius: 1.1vw;
+            }
+          }
+        }
+      }
+      .heroBg {
+        .down {
+          width: 6vw;
+        }
+      }
+      .heroContent {
+        margin-top: 7vw;
+        left: 50%;
+        transform: translateX(-47%);
+        .content {
+          margin-top: 10vw;
+          .heading {
+            @include heading(70vw);
+            font-size: 4.9vw;
+            line-height: 7.5vw;
+            text-align: center;
+          }
+          .para {
+            @include paragraph(70vw);
+            font-size: 3vw;
+            line-height: 4.5vw;
+            margin: 2vw 0 3.5vw 0;
+          }
+          .btns {
+            position: relative;
+            left: 50%;
+            transform: translateX(-35.5%);
+            a {
+              margin-right: 2vw;
+            }
+            .expBtn,
+            .viewBtn {
+              font-size: 1.9vw;
+              border: 0.4vw solid $primary;
+              padding: 1.5vw 4vw;
+              border-radius: 1.1vw;
+            }
+          }
+        }
+        .images {
+          margin-right: 10vw;
+          height: 40vw;
+          .boyLap {
+            width: 45vw;
+          }
+          .html {
+            @include bubble(40vw, -5vw, none);
+            width: 9vw;
+          }
+          .js {
+            @include bubble(-5vw, 6vw, none);
+            width: 9vw;
+          }
+          .php {
+            @include bubble(8vw, none, 1vw);
+            width: 9vw;
+          }
+          .css {
+            @include bubble(4vw, none, -5vw);
+            width: 9vw;
+          }
+        }
+      }
+    }
+    .focusSection {
+      .contents {
+        padding: 29vw 10.416666666666666vw;
+        img {
+          width: 54vw;
+        }
+        .content {
+          margin-top: 7vw;
+          .heading {
+            @include heading(70vw);
+            font-size: 4.9vw;
+            line-height: 7.5vw;
+            text-align: center;
+          }
+          .para {
+            @include paragraph(58vw);
+            font-size: 3vw;
+            line-height: 4.5vw;
+            margin: 2vw 0 3.5vw 0;
+          }
+        }
+      }
+    }
+    .quoteSection {
+      .quote {
+        .quoteLeft {
+          top: -4.2vw;
+          left: -33vw;
+        }
+        .quoteRight {
+          right: -33vw;
+          bottom: -11;
+        }
+      }
+      .content {
+        .text {
+          font-size: 4vw;
+        }
+      }
+    }
+    .introSection {
+      .contents {
+        padding: 28vw 10.416666666666666vw 19vw 10.416666666666666vw ;
+      
+        .content {
+          margin-top: 7vw;
+          .heading {
+            @include heading(70vw);
+            font-size: 4.9vw;
+            line-height: 7.5vw;
+            text-align: center;
+          }
+          .para {
+            @include paragraph(58vw);
+            font-size: 3vw;
+            line-height: 4.5vw;
+            margin: 2vw 0 3.5vw 0;
+          }
+        }
+        img {
+          width: 54vw;
+          order: 1;
+        }
+      }
+    }
+    .features {
+      .cards {
+        grid-row-gap: 7vw;
+        .card {
+          width: 30vw;
+          height: 30vw;
+          img {
+            width: 18vw;
+          }
+          .text {
+            font-size: 2.7vw;
+          }
+        }
+      }
+    }
+    .winnerSection {
+      .contents {
+        padding: 29vw 10.416666666666666vw;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        img {
+          width: 35vw;
+        }
+        .content {
+          margin-top: 7vw;
+          .heading {
+            @include heading(70vw);
+            font-size: 4.9vw;
+            line-height: 7.5vw;
+            text-align: center;
+          }
+          .para {
+            @include paragraph(65vw);
+            font-size: 3vw;
+            line-height: 4.5vw;
+            margin: 2vw 0 3.5vw 0;
+          }
+        }
+      }
+    }
+    .testimonials {
+      min-height: 55vh;
+      .container {
+        .quotes {
+          .lq {
+            margin-left: 12vw;
+            margin-top: 22vw;
+            width: 5vw;
+          }
+          .rq {
+            margin-left: 80vw;
+            margin-top: 50vw;
+            width: 5vw;
+          }
+        }
+        .title {
+          font-size: 4.2vw;
+          margin-bottom: 4.5vw;
+        }
+        .slider-indicator {
+          padding: 5vw 0 3.90625vw 0;
+          text-align-last: center;
+          img {
+            width: 7vw;
+            height: auto;
+            margin: 0 4vw;
+          }
+        }
+        .slider {
+          max-width: 60vw;
+          .slide {
+            p {
+              font-size: 2.5vw;
+              line-height: 3.5vw;
+            }
+            .client-info {
+              margin: 4vw 0;
+              .name {
+                font-size: 2vw;
+                margin: 1.5vw 0;
+              }
+              span {
+                font-size: 1.7vw;
+              }
+            }
+          }
+        }
+      }
+    }
+    footer {
+      height: 5.7vh;
+      h3 {
+        font-size: 2vw;
+        img {
+          width: 1.7vw;
+        }
+      }
+    }
+  }
+}
