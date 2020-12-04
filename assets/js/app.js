@@ -27,35 +27,27 @@ var options = {
 };
 Scrollbar.init(document.querySelector("#main"), options);
 
-class MobilePlugin extends ScrollbarPlugin {
-  static pluginName = "mobile";
-  static defaultOptions = {
-    speed: 0.5,
-  };
-
-  transformDelta(delta, fromEvent) {
-    if (fromEvent.type !== "touchend") {
-      return delta;
-    }
-
-    return {
-      x: delta.x * this.options.speed,
-      y: delta.y * this.options.speed,
-    };
-  }
+function MobilePlugin() {
+  Scrollbar.ScrollbarPlugin.apply(this, arguments);
 }
 
-// usage
-Scrollbar.use(MobilePlugin);
+MobilePlugin.prototype = Object.create(Scrollbar.ScrollbarPlugin.prototype);
 
-Scrollbar.init(elem, {
-  plugins: {
-    mobile: {
-      // this is optional
-      speed: 0.5,
-    },
-  },
-});
+MobilePlugin.prototype.transformDelta = function (delta, fromEvent) {
+  if (fromEvent.type !== "touchend") {
+    return delta;
+  }
+
+  return {
+    x: delta.x * this.options.speed,
+    y: delta.y * this.options.speed,
+  };
+};
+
+MobilePlugin.pluginName = "filterEvent";
+MobilePlugin.defaultOptions = {
+  speed: 0.5,
+};
 
 //Button Ripple Effect
 Waves.attach("a");
