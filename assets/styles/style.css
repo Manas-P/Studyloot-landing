@@ -514,12 +514,10 @@ body {
 }
 
 .main .features .cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .main .features .cards .card {
@@ -871,6 +869,289 @@ body {
   }
   .main footer h3 img {
     width: 1vw;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .main .heroSection header {
+    height: 10vw;
+  }
+  .main .heroSection header .logoContainer {
+    width: 12vw;
+  }
+  .main .heroSection header nav .navLinks button {
+    font-size: 1.7vw;
+    border: 0.3vw solid #ff4d4d;
+    padding: 1vw 3vw;
+  }
+  .main .heroSection .heroBg .down {
+    width: 5vw;
+  }
+  .main .heroSection .heroContent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin-top: 7vw;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-47%);
+            transform: translateX(-47%);
+  }
+  .main .heroSection .heroContent .content {
+    margin-top: 10vw;
+  }
+  .main .heroSection .heroContent .content .heading {
+    font-family: "Mont-SB";
+    font-size: 2.9166666666666665vw;
+    width: 50vw;
+    font-size: 4.5vw;
+  }
+  .main .heroSection .heroContent .content .para {
+    font-family: "Mont-M";
+    font-size: 1.25vw;
+    line-height: 1.9270833333333333vw;
+    width: 45vw;
+    font-size: 2.3vw;
+    line-height: 3vw;
+    margin: 2vw 0 2.7vw 0;
+    text-align: center;
+  }
+  .main .heroSection .heroContent .content .btns {
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-43%);
+            transform: translateX(-43%);
+  }
+  .main .heroSection .heroContent .content .btns a {
+    margin-right: 2vw;
+  }
+  .main .heroSection .heroContent .content .btns .expBtn,
+  .main .heroSection .heroContent .content .btns .viewBtn {
+    font-size: 1.7vw;
+    border: 0.3vw solid #ff4d4d;
+    padding: 1vw 3vw;
+  }
+  .main .heroSection .heroContent .images {
+    margin-right: 10vw;
+  }
+  .main .heroSection .heroContent .images .boyLap {
+    width: 40vw;
+  }
+  .main .focusSection .contents {
+    padding: 19vw 10.416666666666666vw;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .main .focusSection .contents img {
+    width: 47vw;
+  }
+  .main .focusSection .contents .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 5vw;
+  }
+  .main .focusSection .contents .content .heading {
+    font-family: "Mont-SB";
+    font-size: 2.9166666666666665vw;
+    width: 60vw;
+    font-size: 4.5vw;
+    text-align: center;
+  }
+  .main .focusSection .contents .content .para {
+    font-family: "Mont-M";
+    font-size: 1.25vw;
+    line-height: 1.9270833333333333vw;
+    width: 51vw;
+    font-size: 2.3vw;
+    line-height: 3vw;
+    margin-top: 2vw;
+    text-align: center;
+  }
+  .main .quoteSection .quote .quoteLeft {
+    top: -4.2vw;
+    left: -33vw;
+  }
+  .main .quoteSection .quote .quoteRight {
+    right: -33vw;
+    bottom: -11;
+  }
+  .main .quoteSection .content .text {
+    font-size: 4vw;
+  }
+  .main .introSection .contents {
+    padding: 19vw 10.416666666666666vw;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .main .introSection .contents .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 5vw;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .main .introSection .contents .content .heading {
+    font-family: "Mont-SB";
+    font-size: 2.9166666666666665vw;
+    width: 60vw;
+    font-size: 4.5vw;
+    text-align: center;
+  }
+  .main .introSection .contents .content .para {
+    font-family: "Mont-M";
+    font-size: 1.25vw;
+    line-height: 1.9270833333333333vw;
+    width: 51vw;
+    font-size: 2.3vw;
+    line-height: 3vw;
+    margin-top: 2vw;
+    text-align: center;
+  }
+  .main .introSection .contents img {
+    width: 47vw;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .main .features .cards {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    grid-row-gap: 10vw;
+  }
+  .main .features .cards .card {
+    width: 26vw;
+    height: 26vw;
+  }
+  .main .features .cards .card img {
+    padding-top: 1.9vw;
+    width: 15vw;
+  }
+  .main .features .cards .card .text {
+    font-size: 2.5vw;
+    padding-bottom: 4.5vw;
+  }
+  .main .winnerSection .contents {
+    padding: 25vw 10.416666666666666vw;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .main .winnerSection .contents img {
+    width: 30vw;
+  }
+  .main .winnerSection .contents .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 5vw;
+  }
+  .main .winnerSection .contents .content .heading {
+    font-family: "Mont-SB";
+    font-size: 2.9166666666666665vw;
+    width: 60vw;
+    font-size: 4.5vw;
+    text-align: center;
+  }
+  .main .winnerSection .contents .content .para {
+    font-family: "Mont-M";
+    font-size: 1.25vw;
+    line-height: 1.9270833333333333vw;
+    width: 51vw;
+    font-size: 2.3vw;
+    line-height: 3vw;
+    margin-top: 2vw;
+    text-align: center;
+  }
+  .main .testimonials {
+    min-height: 70vh;
+  }
+  .main .testimonials .container .quotes .lq {
+    margin-left: 12vw;
+    margin-top: 22vw;
+    width: 5vw;
+  }
+  .main .testimonials .container .quotes .rq {
+    margin-left: 80vw;
+    margin-top: 50vw;
+    width: 5vw;
+  }
+  .main .testimonials .container .title {
+    font-size: 3.9vw;
+    margin-bottom: 4.5vw;
+  }
+  .main .testimonials .container .slider-indicator {
+    padding: 5vw 0 3.90625vw 0;
+    text-align-last: center;
+  }
+  .main .testimonials .container .slider-indicator img {
+    width: 7vw;
+    height: auto;
+    margin: 0 4vw;
+  }
+  .main .testimonials .container .slider {
+    max-width: 60vw;
+  }
+  .main .testimonials .container .slider .slide p {
+    font-size: 2.5vw;
+    line-height: 3.5vw;
+  }
+  .main .testimonials .container .slider .slide .client-info {
+    margin: 4vw 0;
+  }
+  .main .testimonials .container .slider .slide .client-info .name {
+    font-size: 2vw;
+    margin: 1.5vw 0;
+  }
+  .main .testimonials .container .slider .slide .client-info span {
+    font-size: 1.7vw;
+  }
+  .main footer {
+    height: 5.7vh;
+  }
+  .main footer h3 {
+    font-size: 1.8vw;
+  }
+  .main footer h3 img {
+    width: 1.4vw;
   }
 }
 /*# sourceMappingURL=style.css.map */

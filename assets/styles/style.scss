@@ -230,8 +230,8 @@ body {
   .features {
     padding: 0 10.416666666666666vw 5vw 10.416666666666666vw;
     .cards {
-      display: flex;
-      justify-content: space-between;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
       .card {
         display: flex;
         flex-direction: column;
@@ -592,6 +592,258 @@ body {
         font-size: 1.35vw;
         img {
           width: 1vw;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .main {
+    .heroSection {
+      header {
+        height: 10vw;
+        .logoContainer {
+          width: 12vw;
+        }
+        nav {
+          .navLinks {
+            button {
+              font-size: 1.7vw;
+              border: 0.3vw solid $primary;
+              padding: 1vw 3vw;
+            }
+          }
+        }
+      }
+      .heroBg {
+        .down {
+          width: 5vw;
+        }
+      }
+      .heroContent {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 7vw;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-47%);
+        .content {
+          margin-top: 10vw;
+          .heading {
+            @include heading(50vw);
+            font-size: 4.5vw;
+          }
+          .para {
+            @include paragraph(45vw);
+            font-size: 2.3vw;
+            line-height: 3vw;
+            margin: 2vw 0 2.7vw 0;
+            text-align: center;
+          }
+          .btns {
+            position: relative;
+            left: 50%;
+            transform: translateX(-43%);
+            a {
+              margin-right: 2vw;
+            }
+            .expBtn,
+            .viewBtn {
+              font-size: 1.7vw;
+              border: 0.3vw solid $primary;
+              padding: 1vw 3vw;
+            }
+          }
+        }
+        .images {
+          margin-right: 10vw;
+          .boyLap {
+            width: 40vw;
+          }
+        }
+      }
+    }
+    .focusSection {
+      .contents {
+        padding: 19vw 10.416666666666666vw;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        img {
+          width: 47vw;
+        }
+        .content {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-top: 5vw;
+          .heading {
+            @include heading(60vw);
+            font-size: 4.5vw;
+            text-align: center;
+          }
+          .para {
+            @include paragraph(51vw);
+            font-size: 2.3vw;
+            line-height: 3vw;
+            margin-top: 2vw;
+            text-align: center;
+          }
+        }
+      }
+    }
+    .quoteSection {
+      .quote {
+        .quoteLeft {
+          top: -4.2vw;
+          left: -33vw;
+        }
+        .quoteRight {
+          right: -33vw;
+          bottom: -11;
+        }
+      }
+      .content {
+        .text {
+          font-size: 4vw;
+        }
+      }
+    }
+    .introSection {
+      .contents {
+        padding: 19vw 10.416666666666666vw;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        .content {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-top: 5vw;
+          order: 2;
+          .heading {
+            @include heading(60vw);
+            font-size: 4.5vw;
+            text-align: center;
+          }
+          .para {
+            @include paragraph(51vw);
+            font-size: 2.3vw;
+            line-height: 3vw;
+            margin-top: 2vw;
+            text-align: center;
+          }
+        }
+        img {
+          width: 47vw;
+          order: 1;
+        }
+      }
+    }
+    .features {
+      .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+        grid-row-gap: 10vw;
+        .card {
+          width: 26vw;
+          height: 26vw;
+          img {
+            padding-top: 1.9vw;
+            width: 15vw;
+          }
+          .text {
+            font-size: 2.5vw;
+            padding-bottom: 4.5vw;
+          }
+        }
+      }
+    }
+    .winnerSection {
+      .contents {
+        padding: 25vw 10.416666666666666vw;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        img {
+          width: 30vw;
+        }
+        .content {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-top: 5vw;
+          .heading {
+            @include heading(60vw);
+            font-size: 4.5vw;
+            text-align: center;
+          }
+          .para {
+            @include paragraph(51vw);
+            font-size: 2.3vw;
+            line-height: 3vw;
+            margin-top: 2vw;
+            text-align: center;
+          }
+        }
+      }
+    }
+    .testimonials {
+      min-height: 70vh;
+      .container {
+        .quotes {
+          .lq {
+            margin-left: 12vw;
+            margin-top: 22vw;
+            width: 5vw;
+          }
+          .rq {
+            margin-left: 80vw;
+            margin-top: 50vw;
+            width: 5vw;
+          }
+        }
+        .title {
+          font-size: 3.9vw;
+          margin-bottom: 4.5vw;
+        }
+        .slider-indicator {
+          padding: 5vw 0 3.90625vw 0;
+          text-align-last: center;
+          img {
+            width: 7vw;
+            height: auto;
+            margin: 0 4vw;
+          }
+        }
+        .slider {
+          max-width: 60vw;
+          .slide {
+            p {
+              font-size: 2.5vw;
+              line-height: 3.5vw;
+            }
+            .client-info {
+              margin: 4vw 0;
+              .name {
+                font-size: 2vw;
+                margin: 1.5vw 0;
+              }
+              span {
+                font-size: 1.7vw;
+              }
+            }
+          }
+        }
+      }
+    }
+    footer {
+      height: 5.7vh;
+      h3 {
+        font-size: 1.8vw;
+        img {
+          width: 1.4vw;
         }
       }
     }
